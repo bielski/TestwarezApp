@@ -1,0 +1,15 @@
+PODS:
+  - FBSnapshotTestCase/Core (2.0.4)
+  - KIF (3.2.3):
+    - KIF/XCTest (= 3.2.3)
+  - KIF/XCTest (3.2.3)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase/Core (~> 2.0)
+  - KIF (~> 3.2)
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
+  KIF: a94bffe9c97e449e44f8fa481c53243d21309e1e
+
+COCOAPODS: 0.38.2
