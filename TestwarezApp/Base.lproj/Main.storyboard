@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-iZ-6T6">
-                                <rect key="frame" x="124" y="469" width="73" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-iZ-6T6">
+                                <rect key="frame" x="125" y="442" width="72" height="30"/>
                                 <state key="normal" title="Regulamin">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -27,12 +28,29 @@
                                     <segue destination="3SW-8D-IT6" kind="push" id="9Ql-da-cUB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-tQ-8bM">
+                                <rect key="frame" x="123" y="383" width="75" height="24"/>
+                                <state key="normal" title="Lokalizacja"/>
+                                <connections>
+                                    <segue destination="hhb-re-1CZ" kind="push" id="WEN-3m-x48"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="z1615_wybrane-formaty" translatesAutoresizingMaskIntoConstraints="NO" id="xY8-DQ-KRi">
+                                <rect key="frame" x="43" y="155" width="234" height="125"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DNR-iZ-6T6" secondAttribute="bottom" constant="69" id="0S9-9t-4qZ"/>
-                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="405" id="GmX-Bj-6VM"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DNR-iZ-6T6" secondAttribute="bottom" constant="96" id="0S9-9t-4qZ"/>
+                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="378" id="GmX-Bj-6VM"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xY8-DQ-KRi" secondAttribute="bottom" constant="288" id="JeI-vD-f6W"/>
+                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="91" id="M63-Gg-h8x"/>
+                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="NSm-mU-NmT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xY8-DQ-KRi" secondAttribute="trailing" constant="23" id="Qvu-A8-ZVH"/>
+                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hQH-Zv-cid"/>
                             <constraint firstAttribute="centerX" secondItem="DNR-iZ-6T6" secondAttribute="centerX" constant="-0.5" id="ioa-P1-bAT"/>
+                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="Qrk-tQ-8bM" secondAttribute="bottom" constant="35" id="qnL-dS-oK4"/>
+                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="319" id="wS7-Cc-MUW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ayK-J8-WmL"/>
@@ -41,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="1588" y="230"/>
         </scene>
-        <!--Regulation View Controller-->
+        <!--Regulamin-->
         <scene sceneID="eJ6-ch-seX">
             <objects>
                 <viewController id="3SW-8D-IT6" customClass="RegulationViewController" sceneMemberID="viewController">
@@ -53,14 +71,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lac-d6-jAL">
-                                <rect key="frame" x="0.0" y="10" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lac-d6-jAL">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="578"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lac-d6-jAL" firstAttribute="width" secondItem="Luu-Kf-Ggx" secondAttribute="width" id="EL3-7d-xXu"/>
+                            <constraint firstItem="Lac-d6-jAL" firstAttribute="leading" secondItem="Luu-Kf-Ggx" secondAttribute="leading" id="Hmx-9z-lip"/>
+                            <constraint firstItem="Lac-d6-jAL" firstAttribute="height" secondItem="Luu-Kf-Ggx" secondAttribute="height" id="fSs-JO-Fc7"/>
+                            <constraint firstItem="Lac-d6-jAL" firstAttribute="top" secondItem="Luu-Kf-Ggx" secondAttribute="top" id="pl9-i9-Hni"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="kWK-Op-koR"/>
+                    <navigationItem key="navigationItem" title="Regulamin" id="kWK-Op-koR"/>
                     <connections>
                         <outlet property="regulationWebView" destination="Lac-d6-jAL" id="dJl-Te-AwB"/>
                     </connections>
@@ -68,6 +92,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7p-Eh-oZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1588" y="897"/>
+        </scene>
+        <!--Lokalizacja-->
+        <scene sceneID="bnc-48-jcm">
+            <objects>
+                <viewController id="hhb-re-1CZ" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="guU-8w-w4S"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTa-Sw-3gA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NzS-G5-XNa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="foO-b4-th0">
+                                <rect key="frame" x="0.0" y="6" width="320" height="562"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="foO-b4-th0" firstAttribute="leading" secondItem="NzS-G5-XNa" secondAttribute="leading" id="IL6-wc-DL2"/>
+                            <constraint firstItem="foO-b4-th0" firstAttribute="height" secondItem="NzS-G5-XNa" secondAttribute="height" id="Kaa-hG-pHn"/>
+                            <constraint firstItem="foO-b4-th0" firstAttribute="bottom" secondItem="RTa-Sw-3gA" secondAttribute="top" id="QPS-21-8ke"/>
+                            <constraint firstItem="foO-b4-th0" firstAttribute="width" secondItem="NzS-G5-XNa" secondAttribute="width" id="u7C-47-wpf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lokalizacja" id="GNS-O5-64e"/>
+                    <connections>
+                        <outlet property="mapView" destination="foO-b4-th0" id="tku-OW-BKx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ln-K4-hRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2024" y="566"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xlv-nv-5lf">
@@ -88,4 +145,7 @@
             <point key="canvasLocation" x="1056" y="230"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="z1615_wybrane-formaty" width="1109" height="261"/>
+    </resources>
 </document>
