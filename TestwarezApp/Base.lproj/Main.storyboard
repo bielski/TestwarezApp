@@ -53,8 +53,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="regulationButtonTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="RED-dB-0Xe"/>
-                                    <segue destination="3SW-8D-IT6" kind="push" id="9Ql-da-cUB"/>
+                                    <segue destination="3SW-8D-IT6" kind="push" id="UOC-Bl-2Hj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7p-Eh-oZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1730" y="1125"/>
+            <point key="canvasLocation" x="1986" y="900"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="9vd-zI-H8D">
@@ -135,18 +134,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
                                 <rect key="frame" x="51" y="428" width="218" height="30"/>
                                 <state key="normal" title="Nie masz konta? Zarejestruj się!"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="dwQ-oR-ad1" secondAttribute="centerX" id="1Zj-Rz-OOa"/>
+                            <constraint firstItem="GeI-qi-Mkt" firstAttribute="top" secondItem="GSA-Oo-FUt" secondAttribute="bottom" constant="110" id="qAL-lQ-OXS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="duK-ct-6P2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijJ-om-cZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2074" y="640"/>
+            <point key="canvasLocation" x="2606" y="640"/>
         </scene>
         <!--Lokalizacja-->
         <scene sceneID="bnc-48-jcm">
