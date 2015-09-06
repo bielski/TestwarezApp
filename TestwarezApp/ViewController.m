@@ -1,11 +1,14 @@
 //
-//  Created by ewa on 31.08.2015.
+//  ; by ewa on 31.08.2015.
 //  Copyright (c) 2015 codework. All rights reserved.
 //
 
 #import "ViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface ViewController ()
+
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
 
@@ -13,18 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self addGradientToImage];
 }
 
-- (void)regulationButtonTapped {
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-- (IBAction)regulationButtonTapped:(id)sender {
-    
+- (void)addGradientToImage {
 }
 
 @end

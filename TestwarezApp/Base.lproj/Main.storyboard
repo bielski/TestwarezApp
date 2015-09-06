@@ -18,9 +18,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-iZ-6T6">
-                                <rect key="frame" x="125" y="442" width="72" height="30"/>
-                                <state key="normal" title="Regulamin">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupPicture" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-aq-dOt">
+                                <rect key="frame" x="0.0" y="242" width="320" height="326"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="z1615_wybrane-formaty" translatesAutoresizingMaskIntoConstraints="NO" id="xY8-DQ-KRi">
+                                <rect key="frame" x="31" y="82" width="258" height="119"/>
+                            </imageView>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-tQ-8bM">
+                                <rect key="frame" x="144" y="191" width="98" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="LOKALIZACJA">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hhb-re-1CZ" kind="push" id="WEN-3m-x48"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ka-g9-R58">
+                                <rect key="frame" x="143" y="229" width="101" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="REJESTRACJA">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="P54-RO-m8g" kind="push" id="38a-tx-3zC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-iZ-6T6">
+                                <rect key="frame" x="144" y="269" width="86" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="REGULAMIN">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -28,32 +57,33 @@
                                     <segue destination="3SW-8D-IT6" kind="push" id="9Ql-da-cUB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-tQ-8bM">
-                                <rect key="frame" x="123" y="383" width="75" height="24"/>
-                                <state key="normal" title="Lokalizacja"/>
-                                <connections>
-                                    <segue destination="hhb-re-1CZ" kind="push" id="WEN-3m-x48"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="z1615_wybrane-formaty" translatesAutoresizingMaskIntoConstraints="NO" id="xY8-DQ-KRi">
-                                <rect key="frame" x="43" y="155" width="234" height="125"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DNR-iZ-6T6" secondAttribute="bottom" constant="96" id="0S9-9t-4qZ"/>
-                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="378" id="GmX-Bj-6VM"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="xY8-DQ-KRi" secondAttribute="bottom" constant="288" id="JeI-vD-f6W"/>
-                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="91" id="M63-Gg-h8x"/>
-                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="23" id="NSm-mU-NmT"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xY8-DQ-KRi" secondAttribute="trailing" constant="23" id="Qvu-A8-ZVH"/>
-                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hQH-Zv-cid"/>
-                            <constraint firstAttribute="centerX" secondItem="DNR-iZ-6T6" secondAttribute="centerX" constant="-0.5" id="ioa-P1-bAT"/>
-                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="Qrk-tQ-8bM" secondAttribute="bottom" constant="35" id="qnL-dS-oK4"/>
-                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="319" id="wS7-Cc-MUW"/>
+                            <constraint firstItem="Xgg-aq-dOt" firstAttribute="centerX" secondItem="xY8-DQ-KRi" secondAttribute="centerX" id="0nI-8C-dke"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qrk-tQ-8bM" secondAttribute="trailing" constant="58" id="2e0-xA-a74"/>
+                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="52d-FO-Rii"/>
+                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="124" id="5QQ-h6-Slh"/>
+                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="top" secondItem="xY8-DQ-KRi" secondAttribute="bottom" constant="-10" id="Ega-PU-PqI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DNR-iZ-6T6" secondAttribute="trailing" constant="70" id="GDl-9V-EAO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3ka-g9-R58" secondAttribute="trailing" constant="56" id="JQE-G3-CzB"/>
+                            <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="3ka-g9-R58" secondAttribute="bottom" constant="14" id="JSs-25-k9P"/>
+                            <constraint firstItem="3ka-g9-R58" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="123" id="Mxf-a2-VEp"/>
+                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="15" id="NSm-mU-NmT"/>
+                            <constraint firstItem="Xgg-aq-dOt" firstAttribute="top" secondItem="xY8-DQ-KRi" secondAttribute="bottom" constant="41" id="Pu2-ca-tN1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xY8-DQ-KRi" secondAttribute="trailing" constant="15" id="Qvu-A8-ZVH"/>
+                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="124" id="T79-rH-dKu"/>
+                            <constraint firstItem="Xgg-aq-dOt" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="gsm-s4-56z"/>
+                            <constraint firstItem="xY8-DQ-KRi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="18" id="gxa-T3-rmQ"/>
+                            <constraint firstItem="3ka-g9-R58" firstAttribute="top" secondItem="Qrk-tQ-8bM" secondAttribute="bottom" constant="14" id="sYE-pz-Gq3"/>
+                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="127" id="uvT-A5-C3O"/>
+                            <constraint firstItem="Xgg-aq-dOt" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="viv-Xm-2UI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ayK-J8-WmL"/>
+                    <connections>
+                        <outlet property="imageView" destination="Xgg-aq-dOt" id="wiG-6h-Qy2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +121,32 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c7p-Eh-oZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1588" y="897"/>
+            <point key="canvasLocation" x="1730" y="1125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9vd-zI-H8D">
+            <objects>
+                <viewController id="P54-RO-m8g" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gOb-Vj-t0k"/>
+                        <viewControllerLayoutGuide type="bottom" id="GeI-qi-Mkt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dwQ-oR-ad1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
+                                <rect key="frame" x="51" y="428" width="218" height="30"/>
+                                <state key="normal" title="Nie masz konta? Zarejestruj się!"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="duK-ct-6P2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijJ-om-cZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2074" y="640"/>
         </scene>
         <!--Lokalizacja-->
         <scene sceneID="bnc-48-jcm">
@@ -124,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ln-K4-hRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2024" y="566"/>
+            <point key="canvasLocation" x="2112" y="8"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xlv-nv-5lf">
@@ -146,6 +201,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="groupPicture" width="799" height="533"/>
         <image name="z1615_wybrane-formaty" width="1109" height="261"/>
     </resources>
 </document>
