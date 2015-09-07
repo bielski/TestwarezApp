@@ -17,27 +17,25 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_testwarez" translatesAutoresizingMaskIntoConstraints="NO" id="9fr-YM-cfs">
-                    <rect key="frame" x="60" y="108" width="361" height="137"/>
-                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Witaj na Testwarez!" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pel-tC-bYh">
+                    <rect key="frame" x="150" y="182" width="182" height="116"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="9fr-YM-cfs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="C4D-xP-TRc"/>
+                <constraint firstItem="pel-tC-bYh" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5YT-iX-5cD"/>
+                <constraint firstItem="pel-tC-bYh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="9wI-Hq-wP7"/>
                 <constraint firstAttribute="bottom" secondItem="8ie-xW-0ye" secondAttribute="bottom" constant="20" id="Kzo-t9-V3l"/>
                 <constraint firstItem="8ie-xW-0ye" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="MfP-vx-nX0"/>
                 <constraint firstAttribute="centerX" secondItem="8ie-xW-0ye" secondAttribute="centerX" id="ZEH-qu-HZ9"/>
-                <constraint firstItem="9fr-YM-cfs" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fs3-Hv-nU1"/>
-                <constraint firstItem="9fr-YM-cfs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="nVJ-Hb-cmz"/>
-                <constraint firstItem="9fr-YM-cfs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="108" id="rLD-y1-m9D"/>
-                <constraint firstAttribute="bottom" secondItem="9fr-YM-cfs" secondAttribute="bottom" constant="235" id="w2b-7B-fVw"/>
+                <constraint firstItem="pel-tC-bYh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="182" id="yXf-4J-193"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
-    <resources>
-        <image name="logo_testwarez" width="210" height="60"/>
-    </resources>
 </document>

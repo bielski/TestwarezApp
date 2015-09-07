@@ -25,7 +25,7 @@
                                 <rect key="frame" x="31" y="82" width="258" height="119"/>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-tQ-8bM">
-                                <rect key="frame" x="144" y="191" width="98" height="24"/>
+                                <rect key="frame" x="147" y="188" width="93" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="LOKALIZACJA">
@@ -36,7 +36,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ka-g9-R58">
-                                <rect key="frame" x="143" y="229" width="101" height="30"/>
+                                <rect key="frame" x="139" y="229" width="110" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="REJESTRACJA">
                                     <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-iZ-6T6">
-                                <rect key="frame" x="144" y="269" width="86" height="30"/>
+                                <rect key="frame" x="140" y="269" width="95" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="REGULAMIN">
                                     <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,10 +122,10 @@
             </objects>
             <point key="canvasLocation" x="1986" y="900"/>
         </scene>
-        <!--View Controller-->
+        <!--Rejestracja-->
         <scene sceneID="9vd-zI-H8D">
             <objects>
-                <viewController id="P54-RO-m8g" sceneMemberID="viewController">
+                <viewController id="P54-RO-m8g" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gOb-Vj-t0k"/>
                         <viewControllerLayoutGuide type="bottom" id="GeI-qi-Mkt"/>
@@ -134,22 +134,117 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
-                                <rect key="frame" x="51" y="428" width="218" height="30"/>
-                                <state key="normal" title="Nie masz konta? Zarejestruj się!"/>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groupPicture" translatesAutoresizingMaskIntoConstraints="NO" id="CXB-gy-vDn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7U-81-pym">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Fif-Ob-cHK">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwy-u9-orY">
+                                            <rect key="frame" x="67" y="235" width="186" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="fQ2-Xy-rmp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQu-ys-bct">
+                                            <rect key="frame" x="68" y="285" width="185" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="shI-so-8Qv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
+                                            <rect key="frame" x="51" y="363" width="218" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="mGN-Bh-GPv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <state key="normal" title="Nie masz konta? Zarejestruj się!"/>
+                                            <connections>
+                                                <segue destination="qlq-3D-6BN" kind="push" id="z8n-Xt-Nxn"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="top" secondItem="tQu-ys-bct" secondAttribute="bottom" constant="48" id="0U7-7P-jAW"/>
+                                        <constraint firstItem="Bwy-u9-orY" firstAttribute="top" secondItem="Fif-Ob-cHK" secondAttribute="top" constant="235" id="8cQ-3q-oBy"/>
+                                        <constraint firstAttribute="trailing" secondItem="GSA-Oo-FUt" secondAttribute="trailing" constant="51" id="9kJ-UY-gwL"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bwy-u9-orY" secondAttribute="trailing" constant="67" id="MjA-g1-3TQ"/>
+                                        <constraint firstAttribute="trailing" secondItem="tQu-ys-bct" secondAttribute="trailing" constant="67" id="NcL-EW-MgU"/>
+                                        <constraint firstAttribute="bottom" secondItem="GSA-Oo-FUt" secondAttribute="bottom" constant="175" id="Vdm-5Q-46w"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="51" id="XFx-tB-SnN"/>
+                                        <constraint firstItem="Bwy-u9-orY" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="67" id="aB6-Hk-Vd7"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="51" id="bGN-np-zHP"/>
+                                        <constraint firstItem="tQu-ys-bct" firstAttribute="top" secondItem="Bwy-u9-orY" secondAttribute="bottom" constant="20" id="cny-yq-bgA"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="Fif-Ob-cHK" secondAttribute="centerX" id="lyY-5H-mSW"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="51" id="mp3-4f-eG8"/>
+                                        <constraint firstItem="tQu-ys-bct" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="68" id="obk-ja-PUJ"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="Bwy-u9-orY" secondAttribute="centerX" id="qxW-d0-kan"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="tQu-ys-bct" secondAttribute="centerX" id="xcy-Lk-aaT"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="dwQ-oR-ad1" secondAttribute="centerX" id="1Zj-Rz-OOa"/>
-                            <constraint firstItem="GeI-qi-Mkt" firstAttribute="top" secondItem="GSA-Oo-FUt" secondAttribute="bottom" constant="110" id="qAL-lQ-OXS"/>
+                            <constraint firstItem="V7U-81-pym" firstAttribute="bottom" secondItem="GeI-qi-Mkt" secondAttribute="top" id="00D-H7-NIY"/>
+                            <constraint firstItem="V7U-81-pym" firstAttribute="height" secondItem="CXB-gy-vDn" secondAttribute="height" id="1ZI-q5-Ag5"/>
+                            <constraint firstItem="CXB-gy-vDn" firstAttribute="bottom" secondItem="GeI-qi-Mkt" secondAttribute="top" id="3eI-28-3rw"/>
+                            <constraint firstItem="CXB-gy-vDn" firstAttribute="width" secondItem="dwQ-oR-ad1" secondAttribute="width" id="5PE-XF-po3"/>
+                            <constraint firstItem="CXB-gy-vDn" firstAttribute="height" secondItem="dwQ-oR-ad1" secondAttribute="height" id="EQo-9I-S35"/>
+                            <constraint firstItem="V7U-81-pym" firstAttribute="leading" secondItem="dwQ-oR-ad1" secondAttribute="leading" id="OAt-kR-cnj"/>
+                            <constraint firstItem="V7U-81-pym" firstAttribute="width" secondItem="CXB-gy-vDn" secondAttribute="width" id="pb8-Rj-krB"/>
+                            <constraint firstItem="V7U-81-pym" firstAttribute="leading" secondItem="CXB-gy-vDn" secondAttribute="leading" id="tRC-dz-1KR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="duK-ct-6P2"/>
+                    <navigationItem key="navigationItem" title="Rejestracja" id="duK-ct-6P2"/>
+                    <connections>
+                        <outlet property="loginTextField" destination="Bwy-u9-orY" id="ahx-8o-eKO"/>
+                        <outlet property="passwordTextField" destination="tQu-ys-bct" id="xcC-tf-lFw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ijJ-om-cZ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2606" y="640"/>
+        </scene>
+        <!--Registration Online View Controller-->
+        <scene sceneID="P2r-Q4-qHY">
+            <objects>
+                <viewController id="qlq-3D-6BN" customClass="RegistrationOnlineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aVz-YU-Gvq"/>
+                        <viewControllerLayoutGuide type="bottom" id="WGF-Xp-Xkr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kO1-Wi-LhD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ozO-wN-vWm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ozO-wN-vWm" firstAttribute="width" secondItem="kO1-Wi-LhD" secondAttribute="width" id="F3U-e0-k2C"/>
+                            <constraint firstItem="ozO-wN-vWm" firstAttribute="height" secondItem="kO1-Wi-LhD" secondAttribute="height" id="b6e-7s-Cvi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xfi-fM-T1C"/>
+                    <connections>
+                        <outlet property="registrationOnlineWebView" destination="ozO-wN-vWm" id="iSe-yS-fit"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGk-k8-Bxt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2962" y="640"/>
         </scene>
         <!--Lokalizacja-->
         <scene sceneID="bnc-48-jcm">

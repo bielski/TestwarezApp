@@ -15,6 +15,7 @@
 		9C528A621B99EB85000CEC88 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A611B99EB85000CEC88 /* MapViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9C528A641B99F1EB000CEC88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C528A631B99F1EB000CEC88 /* MapKit.framework */; };
 		9C528A671B9C5AFD000CEC88 /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
+		9C528A6A1B9C8D26000CEC88 /* RegistrationOnlineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A691B9C8D26000CEC88 /* RegistrationOnlineViewController.m */; settings = {ASSET_TAGS = (); }; };
 		9CC239931B94A90B000C5D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
 		9CC239961B94A90B000C5D1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239951B94A90B000C5D1B /* AppDelegate.m */; };
 		9CC239991B94A90B000C5D1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
@@ -60,6 +61,8 @@
 		9C528A631B99F1EB000CEC88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		9C528A651B9C5AFD000CEC88 /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
+		9C528A681B9C8D26000CEC88 /* RegistrationOnlineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationOnlineViewController.h; sourceTree = "<group>"; };
+		9C528A691B9C8D26000CEC88 /* RegistrationOnlineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationOnlineViewController.m; sourceTree = "<group>"; };
 		9CC2398D1B94A90B000C5D1B /* TestwarezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestwarezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC239911B94A90B000C5D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC239921B94A90B000C5D1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				9C528A611B99EB85000CEC88 /* MapViewController.m */,
 				9C528A651B9C5AFD000CEC88 /* RegistrationViewController.h */,
 				9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */,
+				9C528A681B9C8D26000CEC88 /* RegistrationOnlineViewController.h */,
+				9C528A691B9C8D26000CEC88 /* RegistrationOnlineViewController.m */,
 				9CC2399A1B94A90B000C5D1B /* Main.storyboard */,
 				9CC2399D1B94A90B000C5D1B /* Images.xcassets */,
 				9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */,
@@ -458,6 +463,7 @@
 				9C528A671B9C5AFD000CEC88 /* RegistrationViewController.m in Sources */,
 				9CC239961B94A90B000C5D1B /* AppDelegate.m in Sources */,
 				9C528A621B99EB85000CEC88 /* MapViewController.m in Sources */,
+				9C528A6A1B9C8D26000CEC88 /* RegistrationOnlineViewController.m in Sources */,
 				9C1AC9551B964A2500710D04 /* RegulationViewController.m in Sources */,
 				9CC239931B94A90B000C5D1B /* main.m in Sources */,
 			);

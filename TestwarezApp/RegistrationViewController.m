@@ -1,7 +1,4 @@
 //
-//  RegistrationViewController.m
-//  TestwarezApp
-//
 //  Created by ewa on 06.09.2015.
 //  Copyright © 2015 codework. All rights reserved.
 //
@@ -10,28 +7,31 @@
 
 @interface RegistrationViewController ()
 
+@property (strong, nonatomic) IBOutlet UITextField *loginTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+
 @end
 
 @implementation RegistrationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setImageForLoginTextField];
+    [self setImageForPasswordTextField];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setImageForLoginTextField {
+    self.loginTextField.leftViewMode = UITextFieldViewModeAlways;
+    UIImageView *loginImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"contact2.png"]];
+    loginImageView.alpha = 0.5f;
+    self.loginTextField.leftView = loginImageView;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setImageForPasswordTextField {
+    self.passwordTextField.leftViewMode = UITextFieldViewModeAlways;
+    UIImageView *passwordImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"password2.png"]];
+    passwordImageView.alpha = 0.5f;
+    self.passwordTextField.leftView = passwordImageView;
 }
-*/
 
 @end

@@ -5,6 +5,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegistrationViewController : UIViewController
+@interface RegistrationOnlineViewController : UIViewController
 
 @end
