@@ -143,7 +143,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwy-u9-orY">
+                                        <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="login" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bwy-u9-orY">
                                             <rect key="frame" x="67" y="235" width="186" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="fQ2-Xy-rmp"/>
@@ -151,7 +151,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQu-ys-bct">
+                                        <textField opaque="NO" clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="hasło" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQu-ys-bct">
                                             <rect key="frame" x="68" y="285" width="185" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="shI-so-8Qv"/>
@@ -159,8 +159,15 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
-                                            <rect key="frame" x="51" y="363" width="218" height="30"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OoW-BT-3RH">
+                                            <rect key="frame" x="113" y="336" width="95" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <state key="normal" title="ZALOGUJ SIĘ">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSA-Oo-FUt">
+                                            <rect key="frame" x="51" y="495" width="218" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="mGN-Bh-GPv"/>
                                             </constraints>
@@ -172,21 +179,16 @@
                                         </button>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="top" secondItem="tQu-ys-bct" secondAttribute="bottom" constant="48" id="0U7-7P-jAW"/>
                                         <constraint firstItem="Bwy-u9-orY" firstAttribute="top" secondItem="Fif-Ob-cHK" secondAttribute="top" constant="235" id="8cQ-3q-oBy"/>
-                                        <constraint firstAttribute="trailing" secondItem="GSA-Oo-FUt" secondAttribute="trailing" constant="51" id="9kJ-UY-gwL"/>
                                         <constraint firstAttribute="trailing" secondItem="Bwy-u9-orY" secondAttribute="trailing" constant="67" id="MjA-g1-3TQ"/>
                                         <constraint firstAttribute="trailing" secondItem="tQu-ys-bct" secondAttribute="trailing" constant="67" id="NcL-EW-MgU"/>
-                                        <constraint firstAttribute="bottom" secondItem="GSA-Oo-FUt" secondAttribute="bottom" constant="175" id="Vdm-5Q-46w"/>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="51" id="XFx-tB-SnN"/>
+                                        <constraint firstItem="OoW-BT-3RH" firstAttribute="centerX" secondItem="Fif-Ob-cHK" secondAttribute="centerX" id="UjX-db-6Ei"/>
                                         <constraint firstItem="Bwy-u9-orY" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="67" id="aB6-Hk-Vd7"/>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="51" id="bGN-np-zHP"/>
                                         <constraint firstItem="tQu-ys-bct" firstAttribute="top" secondItem="Bwy-u9-orY" secondAttribute="bottom" constant="20" id="cny-yq-bgA"/>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="Fif-Ob-cHK" secondAttribute="centerX" id="lyY-5H-mSW"/>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="51" id="mp3-4f-eG8"/>
+                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="Fif-Ob-cHK" secondAttribute="centerX" id="mgh-hT-Vxu"/>
                                         <constraint firstItem="tQu-ys-bct" firstAttribute="leading" secondItem="Fif-Ob-cHK" secondAttribute="leading" constant="68" id="obk-ja-PUJ"/>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="Bwy-u9-orY" secondAttribute="centerX" id="qxW-d0-kan"/>
-                                        <constraint firstItem="GSA-Oo-FUt" firstAttribute="centerX" secondItem="tQu-ys-bct" secondAttribute="centerX" id="xcy-Lk-aaT"/>
+                                        <constraint firstItem="OoW-BT-3RH" firstAttribute="top" secondItem="tQu-ys-bct" secondAttribute="bottom" constant="21" id="vxv-LZ-PnR"/>
+                                        <constraint firstAttribute="bottom" secondItem="GSA-Oo-FUt" secondAttribute="bottom" constant="43" id="yDK-R1-m8Z"/>
                                     </constraints>
                                 </view>
                                 <blurEffect style="light"/>

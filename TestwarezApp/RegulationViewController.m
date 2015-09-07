@@ -6,6 +6,7 @@
 #import "RegulationViewController.h"
 
 @interface RegulationViewController ()
+
 @property (strong, nonatomic) IBOutlet UIWebView *regulationWebView;
 
 @end
