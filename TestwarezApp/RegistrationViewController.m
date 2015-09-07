@@ -34,4 +34,17 @@
     self.passwordTextField.leftView = passwordImageView;
 }
 
+- (IBAction)loginButtonTapped:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    
+    if ([self.loginTextField.text isEqualToString:@""] || [self.passwordTextField.text isEqualToString:@""]) {
+        alert.message = @"Proszę wprowadź dane do logowania";
+    } else {
+        alert.message = @"Gratulacje, zalogowałeś się \ue415";
+    }
+    
+    [alert show];
+}
+
+
 @end
