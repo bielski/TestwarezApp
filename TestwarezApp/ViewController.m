@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *regulationButton;
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UIView *blurView;
 
 @end
 
@@ -25,6 +26,14 @@
 }
 
 - (void)addGradientToImage {
+    CAGradientLayer *gradient = [CAGradientLayer layer];
+    gradient.frame = self.blurView.bounds;
+    UIColor *startColour = [UIColor whiteColor]; // colorWithAlphaComponent:1];
+    UIColor *endColour = [[UIColor whiteColor] colorWithAlphaComponent:0];
+//    gradient.startPoint = CGPointMake(0.5, 0);
+//    gradient.endPoint = CGPointMake(0.5, 1.0f);
+    gradient.colors = [NSArray arrayWithObjects:(id)[startColour CGColor], (id)[endColour CGColor], nil];
+    [self.blurView.layer insertSublayer:gradient atIndex:0];
 }
 
 - (void)addAccessibilityLabels {
