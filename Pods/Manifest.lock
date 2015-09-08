@@ -6,7 +6,17 @@ PODS:
 
 DEPENDENCIES:
   - FBSnapshotTestCase/Core (~> 2.0)
-  - KIF (~> 3.2)
+  - KIF (from `https://github.com/kif-framework/KIF`, commit `d2567a9`)
+
+EXTERNAL SOURCES:
+  KIF:
+    :commit: d2567a9
+    :git: https://github.com/kif-framework/KIF
+
+CHECKOUT OPTIONS:
+  KIF:
+    :commit: d2567a9
+    :git: https://github.com/kif-framework/KIF
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753

@@ -8,6 +8,10 @@
 
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutlet UIButton *localizationButton;
+@property (strong, nonatomic) IBOutlet UIButton *registrationButton;
+@property (strong, nonatomic) IBOutlet UIButton *regulationButton;
+
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
@@ -17,9 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self addGradientToImage];
+    [self addAccessibilityLabels];
 }
 
 - (void)addGradientToImage {
+}
+
+- (void)addAccessibilityLabels {
+    self.localizationButton.accessibilityLabel = @"localization";
+    self.registrationButton.accessibilityLabel = @"registration";
+    self.regulationButton.accessibilityLabel = @"regulation";
 }
 
 @end

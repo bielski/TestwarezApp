@@ -9,6 +9,8 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *loginTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+@property (strong, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
@@ -16,8 +18,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self addAccessibilityLabels];
     [self setImageForLoginTextField];
     [self setImageForPasswordTextField];
+}
+
+- (void)addAccessibilityLabels {
+    self.loginTextField.accessibilityLabel = @"loginTextField";
+    self.passwordTextField.accessibilityLabel = @"passwordTextField";
+    self.loginButton.accessibilityLabel = @"loginButton";
+    self.registerButton.accessibilityLabel = @"registerButton";
 }
 
 - (void)setImageForLoginTextField {

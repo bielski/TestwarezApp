@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 
+#import "IOHIDEvent+KIF.h"
 #import "KIF.h"
 #import "KIFSystemTestActor.h"
 #import "KIFTestActor.h"

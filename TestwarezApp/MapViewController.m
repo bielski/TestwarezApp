@@ -18,6 +18,11 @@
     [super viewDidLoad];
     [self updateCoordinates];
     [self makePointAnnotation];
+    [self addAccessibilityLabels];
+}
+
+- (void)addAccessibilityLabels {
+    self.mapView.accessibilityLabel = @"mapView";
 }
 
 - (void)updateCoordinates {
