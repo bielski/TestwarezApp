@@ -16,6 +16,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadRequest];
+    [self addAccessibilityLabels];
+}
+
+- (void)addAccessibilityLabels {
+    self.regulationWebView.accessibilityLabel = @"regulationWebView";
 }
 
 - (void)loadRequest {

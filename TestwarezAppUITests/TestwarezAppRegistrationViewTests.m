@@ -38,7 +38,7 @@
 
 - (void)testRegistrionViewShouldDisableLoginWhenTextFieldIsEmpty {
     
-    [tester enterText:@"" intoViewWithAccessibilityLabel:@"loginTextField"];
+    [tester enterText:@"login" intoViewWithAccessibilityLabel:@"loginTextField"];
     [tester enterText:@"" intoViewWithAccessibilityLabel:@"passwordTextField"];
     [tester tapViewWithAccessibilityLabel:@"loginButton"];
     

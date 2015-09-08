@@ -16,6 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadRequest];
+    [self addAccessibilityLabels];
 }
 
 - (void)loadRequest {
@@ -23,6 +24,10 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:urlAddress];
     
     [self.registrationOnlineWebView loadRequest:request];
+}
+
+- (void)addAccessibilityLabels {
+    self.registrationOnlineWebView.accessibilityLabel = @"registrationOnlineWebView";
 }
 
 @end
