@@ -23,15 +23,23 @@
     [super viewDidLoad];
     [self addGradientToImage];
     [self addAccessibilityLabels];
+
+    [self setButtonFrameAndWidth:self.localizationButton];
+    [self setButtonFrameAndWidth:self.registrationButton];
+    [self setButtonFrameAndWidth:self.regulationButton];
+}
+
+- (void)setButtonFrameAndWidth:(UIButton *)button {
+    [[button layer] setBorderColor:[UIColor colorWithRed:(51/2550.0) green:(153/255.0) blue:(255/255.0) alpha:0.7].CGColor];
+    [[button layer] setBorderWidth:0.8f];
 }
 
 - (void)addGradientToImage {
     CAGradientLayer *gradient = [CAGradientLayer layer];
     gradient.frame = self.blurView.bounds;
-    UIColor *startColour = [UIColor whiteColor]; // colorWithAlphaComponent:1];
+    UIColor *startColour = [UIColor whiteColor];
     UIColor *endColour = [[UIColor whiteColor] colorWithAlphaComponent:0];
-//    gradient.startPoint = CGPointMake(0.5, 0);
-//    gradient.endPoint = CGPointMake(0.5, 1.0f);
+    
     gradient.colors = [NSArray arrayWithObjects:(id)[startColour CGColor], (id)[endColour CGColor], nil];
     [self.blurView.layer insertSublayer:gradient atIndex:0];
 }
