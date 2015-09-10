@@ -19,13 +19,14 @@
 		9C8979111B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979131B9F4103005E69F2 /* TestwarezAppRegulationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C90F60B1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */; settings = {ASSET_TAGS = (); }; };
+		9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */; settings = {ASSET_TAGS = (); }; };
+		9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9CC239931B94A90B000C5D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
 		9CC239961B94A90B000C5D1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239951B94A90B000C5D1B /* AppDelegate.m */; };
 		9CC239991B94A90B000C5D1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
 		9CC2399C1B94A90B000C5D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399A1B94A90B000C5D1B /* Main.storyboard */; };
 		9CC2399E1B94A90B000C5D1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		9CC239A11B94A90B000C5D1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */; };
-		9CC239AD1B94A90B000C5D1B /* TestwarezAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239AC1B94A90B000C5D1B /* TestwarezAppTests.m */; };
 		B4347B51C477724D34D1EA30 /* Pods_TestwarezAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C524502B57FF95EE90E325 /* Pods_TestwarezAppUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegistrationViewTests.m; sourceTree = "<group>"; };
 		9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegulationViewTests.m; sourceTree = "<group>"; };
 		9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppAccessibilityMacro.m; sourceTree = "<group>"; };
+		9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMainViewTests.m; sourceTree = "<group>"; };
+		9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppLoginViewTests.m; sourceTree = "<group>"; };
 		9CC2398D1B94A90B000C5D1B /* TestwarezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestwarezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC239911B94A90B000C5D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC239921B94A90B000C5D1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,7 +84,6 @@
 		9CC239A01B94A90B000C5D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9CC239A61B94A90B000C5D1B /* TestwarezAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestwarezAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC239AB1B94A90B000C5D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CC239AC1B94A90B000C5D1B /* TestwarezAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppTests.m; sourceTree = "<group>"; };
 		CD74951196B5DCE4CEC0B2ED /* Pods-TestwarezAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestwarezAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestwarezAppTests/Pods-TestwarezAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FABFF22C82A1F7768843D090 /* Pods-TestwarezAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestwarezAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestwarezAppUITests/Pods-TestwarezAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,7 +206,8 @@
 		9CC239A91B94A90B000C5D1B /* TestwarezAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CC239AC1B94A90B000C5D1B /* TestwarezAppTests.m */,
+				9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */,
+				9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */,
 				9CC239AA1B94A90B000C5D1B /* Supporting Files */,
 			);
 			path = TestwarezAppTests;
@@ -485,7 +488,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CC239AD1B94A90B000C5D1B /* TestwarezAppTests.m in Sources */,
+				9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */,
+				9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

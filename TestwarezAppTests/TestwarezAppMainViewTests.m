@@ -1,21 +1,19 @@
 //
-//  Created by ewa on 31.08.2015.
-//  Copyright (c) 2015 codework. All rights reserved.
+//  Created by ewa on 10.09.2015.
+//  Copyright © 2015 codework. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
-#import "MapViewController.h"
-#import <MapKit/MapKit.h>
 
-@interface TestwarezAppTests : FBSnapshotTestCase
+@interface TestwarezAppMainViewTests : FBSnapshotTestCase
 
 @property (strong, nonatomic) UIViewController *mainViewController;
 
 @end
 
-@implementation TestwarezAppTests
+@implementation TestwarezAppMainViewTests
 
 - (void)setUp {
     
@@ -26,7 +24,7 @@
     self.recordMode = NO;
 }
 
-- (void)testExample {
+- (void)testMainViewControllerWithDefaltState {
     
     FBSnapshotVerifyView(self.mainViewController.view, nil);
 }

@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="209" width="397" height="263"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ka-g9-R58">
-                                        <rect key="frame" x="101" y="36" width="118" height="29"/>
+                                        <rect key="frame" x="101" y="31" width="118" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="l o g o w a n i e">
                                             <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -35,7 +35,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" verticalHuggingPriority="251" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-iZ-6T6">
-                                        <rect key="frame" x="101" y="83" width="118" height="30"/>
+                                        <rect key="frame" x="101" y="78" width="118" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="u1J-vr-iDz"/>
                                         </constraints>
@@ -51,14 +51,14 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="3ka-g9-R58" secondAttribute="bottom" constant="18" id="Lg8-DD-VOi"/>
-                                    <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="id9-8r-vQh" secondAttribute="top" constant="83" id="Zlg-dL-lBi"/>
+                                    <constraint firstItem="DNR-iZ-6T6" firstAttribute="top" secondItem="id9-8r-vQh" secondAttribute="top" constant="78" id="Zlg-dL-lBi"/>
                                 </constraints>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="z1615_wybrane-formaty" translatesAutoresizingMaskIntoConstraints="NO" id="xY8-DQ-KRi">
                                 <rect key="frame" x="31" y="75" width="258" height="125"/>
                             </imageView>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qrk-tQ-8bM">
-                                <rect key="frame" x="101" y="197" width="118" height="30"/>
+                                <rect key="frame" x="101" y="192" width="118" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="2Mg-16-lKq"/>
                                 </constraints>
@@ -88,8 +88,8 @@
                             <constraint firstAttribute="trailingMargin" secondItem="DNR-iZ-6T6" secondAttribute="trailing" constant="81" id="XzQ-Cz-M8x"/>
                             <constraint firstItem="id9-8r-vQh" firstAttribute="top" secondItem="xY8-DQ-KRi" secondAttribute="bottom" constant="9" id="ZEH-O2-9M7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3ka-g9-R58" secondAttribute="trailing" constant="81" id="cfE-WI-AXn"/>
-                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="133" id="cnf-Da-uhQ"/>
-                            <constraint firstItem="Xgg-aq-dOt" firstAttribute="top" secondItem="Qrk-tQ-8bM" secondAttribute="bottom" constant="21" id="daz-1q-Jwi"/>
+                            <constraint firstItem="Qrk-tQ-8bM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="128" id="cnf-Da-uhQ"/>
+                            <constraint firstItem="Xgg-aq-dOt" firstAttribute="top" secondItem="Qrk-tQ-8bM" secondAttribute="bottom" constant="26" id="daz-1q-Jwi"/>
                             <constraint firstItem="Qrk-tQ-8bM" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="gO1-gg-Y2G"/>
                             <constraint firstItem="Xgg-aq-dOt" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="gsm-s4-56z"/>
                             <constraint firstItem="xY8-DQ-KRi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="11" id="gxa-T3-rmQ"/>
