@@ -18,6 +18,7 @@
 		9C89790F1B9E305B005E69F2 /* TestwarezAppMapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979111B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979131B9F4103005E69F2 /* TestwarezAppRegulationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */; settings = {ASSET_TAGS = (); }; };
+		9C90F60B1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */; settings = {ASSET_TAGS = (); }; };
 		9CC239931B94A90B000C5D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
 		9CC239961B94A90B000C5D1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239951B94A90B000C5D1B /* AppDelegate.m */; };
 		9CC239991B94A90B000C5D1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
@@ -67,6 +68,7 @@
 		9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMapViewTests.m; sourceTree = "<group>"; };
 		9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegistrationViewTests.m; sourceTree = "<group>"; };
 		9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegulationViewTests.m; sourceTree = "<group>"; };
+		9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppAccessibilityMacro.m; sourceTree = "<group>"; };
 		9CC2398D1B94A90B000C5D1B /* TestwarezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestwarezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC239911B94A90B000C5D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC239921B94A90B000C5D1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				9CC2399D1B94A90B000C5D1B /* Images.xcassets */,
 				9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */,
 				9CC239901B94A90B000C5D1B /* Supporting Files */,
+				9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */,
 			);
 			path = TestwarezApp;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				9C528A621B99EB85000CEC88 /* MapViewController.m in Sources */,
 				9C528A6A1B9C8D26000CEC88 /* RegistrationOnlineViewController.m in Sources */,
 				9C1AC9551B964A2500710D04 /* RegulationViewController.m in Sources */,
+				9C90F60B1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m in Sources */,
 				9CC239931B94A90B000C5D1B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

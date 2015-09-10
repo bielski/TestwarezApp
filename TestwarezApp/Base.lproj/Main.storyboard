@@ -9,7 +9,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainViewController" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -27,7 +27,7 @@
                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="249" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ka-g9-R58">
                                         <rect key="frame" x="101" y="36" width="118" height="29"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <state key="normal" title="r e j e s t r a c j a">
+                                        <state key="normal" title="l o g o w a n i e">
                                             <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
@@ -113,10 +113,10 @@
             </objects>
             <point key="canvasLocation" x="1588" y="230"/>
         </scene>
-        <!--Regulamin-->
+        <!--r e g u l a m i n-->
         <scene sceneID="eJ6-ch-seX">
             <objects>
-                <viewController id="3SW-8D-IT6" customClass="RegulationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="regulationViewController" id="3SW-8D-IT6" customClass="RegulationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lR0-FW-TFy"/>
                         <viewControllerLayoutGuide type="bottom" id="fbW-5M-2BO"/>
@@ -138,7 +138,7 @@
                             <constraint firstItem="Lac-d6-jAL" firstAttribute="top" secondItem="Luu-Kf-Ggx" secondAttribute="top" id="pl9-i9-Hni"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Regulamin" id="kWK-Op-koR"/>
+                    <navigationItem key="navigationItem" title="r e g u l a m i n" id="kWK-Op-koR"/>
                     <connections>
                         <outlet property="regulationWebView" destination="Lac-d6-jAL" id="dJl-Te-AwB"/>
                     </connections>
@@ -147,10 +147,10 @@
             </objects>
             <point key="canvasLocation" x="1986" y="900"/>
         </scene>
-        <!--Rejestracja-->
+        <!--l o g o w a n i e-->
         <scene sceneID="9vd-zI-H8D">
             <objects>
-                <viewController id="P54-RO-m8g" customClass="RegistrationViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginViewController" id="P54-RO-m8g" customClass="RegistrationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gOb-Vj-t0k"/>
                         <viewControllerLayoutGuide type="bottom" id="GeI-qi-Mkt"/>
@@ -237,7 +237,7 @@
                             <constraint firstItem="V7U-81-pym" firstAttribute="leading" secondItem="CXB-gy-vDn" secondAttribute="leading" id="tRC-dz-1KR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Rejestracja" id="duK-ct-6P2"/>
+                    <navigationItem key="navigationItem" title="l o g o w a n i e" id="duK-ct-6P2"/>
                     <connections>
                         <outlet property="loginButton" destination="OoW-BT-3RH" id="iAe-BO-rLO"/>
                         <outlet property="loginTextField" destination="Bwy-u9-orY" id="ahx-8o-eKO"/>
@@ -281,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="2962" y="640"/>
         </scene>
-        <!--Lokalizacja-->
+        <!--l o k a l i z a c j a-->
         <scene sceneID="bnc-48-jcm">
             <objects>
-                <viewController id="hhb-re-1CZ" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapViewController" id="hhb-re-1CZ" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="guU-8w-w4S"/>
                         <viewControllerLayoutGuide type="bottom" id="RTa-Sw-3gA"/>
@@ -305,7 +305,7 @@
                             <constraint firstItem="foO-b4-th0" firstAttribute="width" secondItem="NzS-G5-XNa" secondAttribute="width" id="u7C-47-wpf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Lokalizacja" id="GNS-O5-64e"/>
+                    <navigationItem key="navigationItem" title="l o k a l i z a c j a" id="GNS-O5-64e"/>
                     <connections>
                         <outlet property="mapView" destination="foO-b4-th0" id="tku-OW-BKx"/>
                     </connections>

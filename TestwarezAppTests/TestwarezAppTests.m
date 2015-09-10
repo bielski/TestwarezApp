@@ -6,22 +6,29 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
+#import "MapViewController.h"
+#import <MapKit/MapKit.h>
 
 @interface TestwarezAppTests : FBSnapshotTestCase
-@property (strong, nonatomic) UIView *testView;
+
+@property (strong, nonatomic) UIViewController *mainViewController;
+
 @end
 
 @implementation TestwarezAppTests
 
 - (void)setUp {
+    
     [super setUp];
-    self.testView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 20, 100)];
-    self.testView.backgroundColor = [UIColor blueColor];
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.mainViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"mainViewController"];
     self.recordMode = NO;
 }
 
 - (void)testExample {
-    FBSnapshotVerifyView(self.testView, nil);
+    
+    FBSnapshotVerifyView(self.mainViewController.view, nil);
 }
 
 @end
