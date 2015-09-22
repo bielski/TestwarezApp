@@ -3,7 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>SchemeUserState</key>
-	<dict/>
+	<dict>
+		<key>TestwarezApp-cal.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>9C3B1FCB1B94AD0B00D79958</key>
@@ -17,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>9CC239A51B94A90B000C5D1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>dea6aa68c86270867c701fa8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
