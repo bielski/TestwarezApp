@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "D2F99B66C64105F30B07EC8B282EC85A7012CD1C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D2F99B66C64105F30B07EC8B282EC85A7012CD1C" : 0,
+    "756BEEC3E8505C5F19F7D96C5F8E532500A88264" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "9A1354C9-4882-4F1A-BB74-3D3F0C690434",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D2F99B66C64105F30B07EC8B282EC85A7012CD1C" : "TestwarezApp\/",
+    "756BEEC3E8505C5F19F7D96C5F8E532500A88264" : "..\/Documents\/projekty\/offerDetails"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TestwarezApp",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TestwarezApp.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/ewa.bielska@stash.allegrogroup.com\/scm\/iosmodules\/offerdetails.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "756BEEC3E8505C5F19F7D96C5F8E532500A88264"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bielski\/TestwarezApp.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D2F99B66C64105F30B07EC8B282EC85A7012CD1C"
+    }
+  ]
+}
