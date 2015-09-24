@@ -3,6 +3,7 @@
 //  Copyright © 2015 codework. All rights reserved.
 //
 
+#import "SnapshotTestHelper.m"
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>

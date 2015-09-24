@@ -15,6 +15,7 @@
 		3fcdd579eca785e9057cb30d /* TestwarezAppAccessibilityMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */; settings = {ASSET_TAGS = (); }; };
 		433049CA1BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */; settings = {ASSET_TAGS = (); }; };
 		433049CB1BB491DC00166378 /* testExample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433049C91BB491DC00166378 /* testExample@2x.png */; settings = {ASSET_TAGS = (); }; };
+		433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 433049CC1BB4927C00166378 /* SnapshotTestHelper.m */; settings = {ASSET_TAGS = (); }; };
 		572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		8c8a49e404b80c2205ec6035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
@@ -70,6 +71,7 @@
 		433047201BB4915800166378 /* TestwarezApp-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestwarezApp-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithDefaltState@2x.png"; sourceTree = "<group>"; };
 		433049C91BB491DC00166378 /* testExample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testExample@2x.png"; sourceTree = "<group>"; };
+		433049CC1BB4927C00166378 /* SnapshotTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotTestHelper.m; sourceTree = "<group>"; };
 		4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestwarezAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7b4e8ec7e48fc99dacf0a6f2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9C1AC94D1B94AFEB00710D04 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = "Pods/../build/Debug-iphoneos/KIF.framework"; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				433049C51BB491DC00166378 /* ReferenceImages_64 */,
 				9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */,
 				9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */,
+				433049CC1BB4927C00166378 /* SnapshotTestHelper.m */,
 				9CC239AA1B94A90B000C5D1B /* Supporting Files */,
 			);
 			path = TestwarezAppTests;
@@ -579,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */,
+				433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */,
 				9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
