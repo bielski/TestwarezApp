@@ -3,13 +3,9 @@
 //  Copyright © 2015 codework. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
-#import <KIF/KIF.h>
-#import "UIAccessibilityElement-KIFAdditions.h"
-#import "AccessibilityConstants.h"
+#import "TestwarezAppKIFTestCase.h"
 
-@interface TestwarezAppRegulationViewTests : KIFTestCase
+@interface TestwarezAppRegulationViewTests : TestwarezAppKIFTestCase
 
 @end
 
@@ -25,16 +21,17 @@
 - (void)afterEach {
 
     [super afterEach];
-    [tester tapViewWithAccessibilityLabel:@"Back"];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.backButton];
 }
 
 - (void)testRegulationViewShouldDisplayWebView {
     
-    UIWebView *regulationWebView = (UIWebView *)[UIAccessibilityElement accessibilityElementWithLabel:@"regulationWebView"
-                                value:nil
-                                traits:UIAccessibilityTraitNone
-                                error:nil];
-    
+    UIWebView *regulationWebView = (UIWebView *)[UIAccessibilityElement
+                                                 accessibilityElementWithLabel:AccessibilityConstants.regulationWebView
+                                                                         value:nil
+                                                                        traits:UIAccessibilityTraitNone
+                                                                         error:nil];
+
     [regulationWebView reload];
 }
 

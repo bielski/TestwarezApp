@@ -17,6 +17,7 @@
 		433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 433049CC1BB4927C00166378 /* SnapshotTestHelper.m */; settings = {ASSET_TAGS = (); }; };
 		437BB4251BB68EA500230850 /* UIView+AccessibilityForDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */; settings = {ASSET_TAGS = (); }; };
 		437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; settings = {ASSET_TAGS = (); }; };
+		437BB4331BB6AA9200230850 /* TestwarezAppKIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */; settings = {ASSET_TAGS = (); }; };
 		572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		8c8a49e404b80c2205ec6035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
@@ -76,6 +77,8 @@
 		437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessibilityForDebug.m"; sourceTree = "<group>"; };
 		437BB4291BB699C100230850 /* AccessibilityConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibilityConstants.h; sourceTree = "<group>"; };
 		437BB42A1BB699C100230850 /* AccessibilityConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessibilityConstants.m; sourceTree = "<group>"; };
+		437BB4311BB6AA9200230850 /* TestwarezAppKIFTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestwarezAppKIFTestCase.h; sourceTree = "<group>"; };
+		437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppKIFTestCase.m; sourceTree = "<group>"; };
 		4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestwarezAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7b4e8ec7e48fc99dacf0a6f2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9C1AC94D1B94AFEB00710D04 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = "Pods/../build/Debug-iphoneos/KIF.framework"; sourceTree = "<group>"; };
@@ -190,12 +193,25 @@
 			path = TestwarezAppTests;
 			sourceTree = "<group>";
 		};
+		437BB42C1BB6A43700230850 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				437BB4231BB68EA500230850 /* UIView+AccessibilityForDebug.h */,
+				437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */,
+				437BB4291BB699C100230850 /* AccessibilityConstants.h */,
+				437BB42A1BB699C100230850 /* AccessibilityConstants.m */,
+			);
+			name = TestHelpers;
+			sourceTree = "<group>";
+		};
 		9C3B1FCD1B94AD0B00D79958 /* TestwarezAppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */,
 				9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */,
 				9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */,
+				437BB4311BB6AA9200230850 /* TestwarezAppKIFTestCase.h */,
+				437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */,
 				9C3B1FCE1B94AD0B00D79958 /* Supporting Files */,
 			);
 			path = TestwarezAppUITests;
@@ -250,10 +266,7 @@
 				9CC2399A1B94A90B000C5D1B /* Main.storyboard */,
 				9CC2399D1B94A90B000C5D1B /* Images.xcassets */,
 				9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */,
-				437BB4231BB68EA500230850 /* UIView+AccessibilityForDebug.h */,
-				437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */,
-				437BB4291BB699C100230850 /* AccessibilityConstants.h */,
-				437BB42A1BB699C100230850 /* AccessibilityConstants.m */,
+				437BB42C1BB6A43700230850 /* TestHelpers */,
 				9CC239901B94A90B000C5D1B /* Supporting Files */,
 			);
 			path = TestwarezApp;
@@ -562,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				437BB4331BB6AA9200230850 /* TestwarezAppKIFTestCase.m in Sources */,
 				9C8979131B9F4103005E69F2 /* TestwarezAppRegulationViewTests.m in Sources */,
 				9C89790F1B9E305B005E69F2 /* TestwarezAppMapViewTests.m in Sources */,
 				9C8979111B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m in Sources */,

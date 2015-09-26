@@ -8,17 +8,20 @@
 const struct AccessibilityConstants AccessibilityConstants = {
 
     .localizationButton = @"localizationButton",
-    .registrationButton = @"registrationButton",
+    .loginButton = @"loginButton",
     .regulationButton = @"regulationButton",
 
     .mapView = @"mapView",
 
     .loginTextField = @"loginTextField",
     .passwordTextField = @"passwordTextField",
-    .loginButton = @"loginButton",
+    .confirmLoginButton = @"loginButton",
     .registerButton = @"registerButton",
 
     .registrationOnlineWebView = @"registrationOnlineWebView",
-    .regulationWebView = @"regulationWebView"
+    .regulationWebView = @"regulationWebView",
+
+    .okButton = @"OK",
+    .backButton = @"Back"
 };
 

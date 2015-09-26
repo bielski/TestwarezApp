@@ -3,12 +3,16 @@
 //  Copyright © 2015 codework. All rights reserved.
 //
 
-#import "AccessibilityConstants.h"
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
-#import <KIF/KIF.h>
+#import "TestwarezAppKIFTestCase.h"
 
-@interface TestwarezAppRegistrationViewTests : KIFTestCase
+static NSString *const kLogin = @"login";
+static NSString *const kEmptyPassword = @"";
+static NSString *const kPassword = @"hasło";
+
+static NSString *const kGratulationInfo = @"Gratulacje, zalogowałeś się \ue415";
+static NSString *const kMissingDataInfo = @"Proszę wprowadź dane do logowania";
+
+@interface TestwarezAppRegistrationViewTests : TestwarezAppKIFTestCase
 
 @end
 
@@ -17,34 +21,34 @@
 - (void)beforeEach {
 
     [super beforeEach];
-    [tester waitForViewWithAccessibilityLabel:AccessibilityConstants.registrationButton];
-    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.registrationButton];
     [tester waitForViewWithAccessibilityLabel:AccessibilityConstants.loginButton];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.loginButton];
+    [tester waitForViewWithAccessibilityLabel:AccessibilityConstants.confirmLoginButton];
 }
 
 - (void)afterEach {
 
     [super afterEach];
-    [tester tapViewWithAccessibilityLabel:@"OK"];
-    [tester tapViewWithAccessibilityLabel:@"Back"];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.okButton];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.backButton];
 }
 
 - (void)testRegistrionViewShouldEnableLogin {
     
-    [tester enterText:@"login" intoViewWithAccessibilityLabel:AccessibilityConstants.loginTextField];
-    [tester enterText:@"password" intoViewWithAccessibilityLabel:AccessibilityConstants.passwordTextField];
-    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.loginButton];
+    [tester enterText:kLogin intoViewWithAccessibilityLabel:AccessibilityConstants.loginTextField];
+    [tester enterText:kPassword intoViewWithAccessibilityLabel:AccessibilityConstants.passwordTextField];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.confirmLoginButton];
     
-    [tester waitForViewWithAccessibilityLabel:@"Gratulacje, zalogowałeś się \ue415"];
+    [tester waitForViewWithAccessibilityLabel:kGratulationInfo];
 }
 
 - (void)testRegistrionViewShouldDisableLoginWhenTextFieldIsEmpty {
     
-    [tester enterText:@"login" intoViewWithAccessibilityLabel:AccessibilityConstants.loginTextField];
-    [tester enterText:@"" intoViewWithAccessibilityLabel:AccessibilityConstants.passwordTextField];
-    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.loginButton];
+    [tester enterText:kLogin intoViewWithAccessibilityLabel:AccessibilityConstants.loginTextField];
+    [tester enterText:kEmptyPassword intoViewWithAccessibilityLabel:AccessibilityConstants.passwordTextField];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.confirmLoginButton];
     
-    [tester waitForViewWithAccessibilityLabel:@"Proszę wprowadź dane do logowania"];
+    [tester waitForViewWithAccessibilityLabel:kMissingDataInfo];
 }
 
 @end

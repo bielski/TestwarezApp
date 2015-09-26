@@ -3,12 +3,11 @@
 //  Copyright © 2015 codework. All rights reserved.
 //
 
-#import "AccessibilityConstants.h"
-#import <UIKit/UIKit.h>
-#import <XCTest/XCTest.h>
-#import <KIF/KIF.h>
+#import "TestwarezAppKIFTestCase.h"
 
-@interface TestwarezAppMapViewTests : KIFTestCase
+static NSString *const kHotelNameAndAddress = @"Hotel Windsor, Jachranka 75";
+
+@interface TestwarezAppMapViewTests : TestwarezAppKIFTestCase
 
 @end
 
@@ -25,13 +24,13 @@
 - (void)afterEach {
 
     [super afterEach];
-    [tester tapViewWithAccessibilityLabel:@"Back"];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.backButton];
 }
 
 - (void)testMapViewShouldContainAnnotation {
     
-    [tester waitForViewWithAccessibilityLabel:@"Hotel Windsor, Jachranka 75"];
-    [tester tapViewWithAccessibilityLabel:@"Hotel Windsor, Jachranka 75"];
+    [tester waitForViewWithAccessibilityLabel:kHotelNameAndAddress];
+    [tester tapViewWithAccessibilityLabel:kHotelNameAndAddress];
 }
 
 - (void)testMapViewShouldBeSwipeable {

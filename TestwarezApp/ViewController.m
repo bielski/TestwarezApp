@@ -11,7 +11,7 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UIButton *localizationButton;
-@property (strong, nonatomic) IBOutlet UIButton *registrationButton;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
 @property (strong, nonatomic) IBOutlet UIButton *regulationButton;
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
@@ -27,7 +27,7 @@
     [self addAccessibilityLabels];
 
     [self setButtonFrameAndWidth:self.localizationButton];
-    [self setButtonFrameAndWidth:self.registrationButton];
+    [self setButtonFrameAndWidth:self.loginButton];
     [self setButtonFrameAndWidth:self.regulationButton];
 }
 
@@ -48,7 +48,7 @@
 
 - (void)addAccessibilityLabels {
     [self.localizationButton setAccessibilityLabelForDebug:AccessibilityConstants.localizationButton];
-    [self.registrationButton setAccessibilityLabelForDebug:AccessibilityConstants.registrationButton];
+    [self.loginButton setAccessibilityLabelForDebug:AccessibilityConstants.loginButton];
     [self.regulationButton setAccessibilityLabelForDebug:AccessibilityConstants.regulationButton];
 }
 

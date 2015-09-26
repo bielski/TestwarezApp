@@ -6,7 +6,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
-#import <OCMock/OCMock.h>
 
 #define TestViewWithAccessibility(name, view) \
 \

@@ -11,7 +11,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *loginTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *confirmLoginButton;
 @property (strong, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
@@ -28,7 +28,7 @@
 - (void)addAccessibilityLabels {
     [self.loginTextField setAccessibilityLabelForDebug:AccessibilityConstants.loginTextField];
     [self.passwordTextField setAccessibilityLabelForDebug:AccessibilityConstants.passwordTextField];
-    [self.loginButton setAccessibilityLabelForDebug:AccessibilityConstants.loginButton];
+    [self.confirmLoginButton setAccessibilityLabelForDebug:AccessibilityConstants.confirmLoginButton];
     [self.registerButton setAccessibilityLabelForDebug:AccessibilityConstants.registerButton];
 }
 
