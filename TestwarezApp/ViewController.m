@@ -11,7 +11,8 @@
 @interface ViewController ()
 
 @property (strong, nonatomic) IBOutlet UIButton *localizationButton;
-@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
 @property (strong, nonatomic) IBOutlet UIButton *regulationButton;
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;

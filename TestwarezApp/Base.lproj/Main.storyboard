@@ -105,7 +105,7 @@
                         <outlet property="blurView" destination="id9-8r-vQh" id="v0z-eb-5Xp"/>
                         <outlet property="imageView" destination="Xgg-aq-dOt" id="wiG-6h-Qy2"/>
                         <outlet property="localizationButton" destination="Qrk-tQ-8bM" id="8zt-pr-iKs"/>
-                        <outlet property="registrationButton" destination="3ka-g9-R58" id="3ay-2e-JXr"/>
+                        <outlet property="loginButton" destination="3ka-g9-R58" id="dk0-A5-QHq"/>
                         <outlet property="regulationButton" destination="DNR-iZ-6T6" id="bkC-y6-Deo"/>
                     </connections>
                 </viewController>
@@ -239,7 +239,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="l o g o w a n i e" id="duK-ct-6P2"/>
                     <connections>
-                        <outlet property="loginButton" destination="OoW-BT-3RH" id="iAe-BO-rLO"/>
+                        <outlet property="confirmLoginButton" destination="OoW-BT-3RH" id="UH3-Mx-sFC"/>
                         <outlet property="loginTextField" destination="Bwy-u9-orY" id="ahx-8o-eKO"/>
                         <outlet property="passwordTextField" destination="tQu-ys-bct" id="xcC-tf-lFw"/>
                         <outlet property="registerButton" destination="GSA-Oo-FUt" id="C7A-R1-bwD"/>
