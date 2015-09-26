@@ -1,12 +1,14 @@
 //
-//  Created by Ewa Bielska on 24/09/15.
-//  Copyright © 2015 codework. All rights reserved.
+//  Created by Michal Banasiak on 24.03.2015.
+//  Copyright (c) 2015 Allegro. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
+#import <OCMock/OCMock.h>
 
+
+// sdfsdfs
 #define TestViewWithAccessibility(name, view) \
 \
 - (void)name##_CategoryExtraSmall { \
@@ -17,32 +19,34 @@
   SnapshotTestWithAccessibility(view, view.frame.size, UIContentSizeCategoryExtraExtraExtraLarge) \
 }
 
-#define TestViewOnFourPlatforms(name, view, AGODiPhone6Size, AGODiPadSize) \
+// sdfsdfs
+#define TestViewOnTwoPlatforms(name, view, iPhone6Size, iPadSize) \
 \
 - (void)name##_iPhone6 { \
-  SnapshotTest(view, AGODiPhone6Size) \
+  SnapshotTest(view, iPhone6Size) \
 } \
 \
 - (void)name##_iPad { \
-  SnapshotTest(view, AGODiPadSize) \
+  SnapshotTest(view, iPadSize) \
 }
 
-#define TestViewOnTwoPlatformsWithAccessibility(name, view, AGODiPhone6Size, AGODiPadSize) \
+// sfdsdfsd
+#define TestViewOnTwoPlatformsWithAccessibility(name, view, iPhone6Size, iPadSize) \
 \
 - (void)name##_iPhone6_CategoryExtraSmall { \
-  SnapshotTestWithAccessibility(view, AGODiPhone6Size, UIContentSizeCategoryExtraSmall) \
+  SnapshotTestWithAccessibility(view, iPhone6Size, UIContentSizeCategoryExtraSmall) \
 } \
 \
 - (void)name##_iPhone6_CategoryExtraExtraExtraLarge { \
-  SnapshotTestWithAccessibility(view, AGODiPhone6Size, UIContentSizeCategoryExtraExtraExtraLarge) \
+  SnapshotTestWithAccessibility(view, iPhone6Size, UIContentSizeCategoryExtraExtraExtraLarge) \
 } \
 \
 - (void)name##_iPad_CategoryExtraSmall { \
-  SnapshotTestWithAccessibility(view, AGODiPadSize, UIContentSizeCategoryExtraSmall) \
+  SnapshotTestWithAccessibility(view, iPadSize, UIContentSizeCategoryExtraSmall) \
 } \
 \
 - (void)name##_iPad_CategoryExtraExtraExtraLarge { \
-  SnapshotTestWithAccessibility(view, AGODiPadSize, UIContentSizeCategoryExtraExtraExtraLarge) \
+  SnapshotTestWithAccessibility(view, iPadSize, UIContentSizeCategoryExtraExtraExtraLarge) \
 }
 
 #define SnapshotTest(view, size) SnapshotTestWithAccessibility(view, size, UIContentSizeCategoryLarge)
@@ -51,7 +55,7 @@
   SnapshotTestWithAccessibilityAndConfiguration(view, size, contentSizeCategory, {})
 
 #define SnapshotTestWithAccessibilityAndConfiguration(view, size, contentSizeCategory, configurationCode) \
-\
+  \
   UIApplication *applicationMock = OCMPartialMock([UIApplication sharedApplication]); \
   OCMStub([applicationMock preferredContentSizeCategory]).andReturn(contentSizeCategory); \
   UIView *v = view; \
@@ -63,3 +67,4 @@
   [v layoutIfNeeded]; \
   FBSnapshotVerifyView(v, nil); \
   [(id)applicationMock stopMocking]; \
+\

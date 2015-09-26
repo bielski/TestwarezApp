@@ -19,6 +19,7 @@
 		437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; settings = {ASSET_TAGS = (); }; };
 		437BB4331BB6AA9200230850 /* TestwarezAppKIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */; settings = {ASSET_TAGS = (); }; };
 		437BB43B1BB6B16E00230850 /* TestwarezAppXcodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB43A1BB6B16E00230850 /* TestwarezAppXcodeUITests.m */; };
+		437BB4431BB6BACB00230850 /* SnapshotConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4421BB6BACB00230850 /* SnapshotConstants.m */; settings = {ASSET_TAGS = (); }; };
 		572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		8c8a49e404b80c2205ec6035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
@@ -90,6 +91,7 @@
 		437BB4381BB6B16E00230850 /* TestwarezAppXcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestwarezAppXcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		437BB43A1BB6B16E00230850 /* TestwarezAppXcodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppXcodeUITests.m; sourceTree = "<group>"; };
 		437BB43C1BB6B16E00230850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		437BB4421BB6BACB00230850 /* SnapshotConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotConstants.m; sourceTree = "<group>"; };
 		4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestwarezAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7b4e8ec7e48fc99dacf0a6f2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9C1AC94D1B94AFEB00710D04 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = "Pods/../build/Debug-iphoneos/KIF.framework"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 				9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */,
 				9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */,
 				433049CC1BB4927C00166378 /* SnapshotTestHelper.m */,
+				437BB4421BB6BACB00230850 /* SnapshotConstants.m */,
 				9CC239AA1B94A90B000C5D1B /* Supporting Files */,
 			);
 			path = TestwarezAppTests;
@@ -672,6 +675,7 @@
 				9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */,
 				433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */,
 				9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */,
+				437BB4431BB6BACB00230850 /* SnapshotConstants.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

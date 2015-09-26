@@ -8,6 +8,7 @@ end
 
 target 'TestwarezAppTests' do
     pod 'FBSnapshotTestCase/Core', '~> 2.0'
+    pod 'OCMock', '~> 3.1'
 end
 
 target 'TestwarezAppUITests' do
