@@ -4,7 +4,9 @@
 //
 
 #import "ViewController.h"
+#import "UIView+AccessibilityForDebug.h"
 #import <QuartzCore/QuartzCore.h>
+#import "AccessibilityConstants.h"
 
 @interface ViewController ()
 
@@ -45,9 +47,9 @@
 }
 
 - (void)addAccessibilityLabels {
-    self.localizationButton.accessibilityLabel = @"localization";
-    self.registrationButton.accessibilityLabel = @"registration";
-    self.regulationButton.accessibilityLabel = @"regulation";
+    [self.localizationButton setAccessibilityLabelForDebug:AccessibilityConstants.localizationButton];
+    [self.registrationButton setAccessibilityLabelForDebug:AccessibilityConstants.registrationButton];
+    [self.regulationButton setAccessibilityLabelForDebug:AccessibilityConstants.regulationButton];
 }
 
 @end

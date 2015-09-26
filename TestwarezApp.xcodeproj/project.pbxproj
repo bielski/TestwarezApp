@@ -12,10 +12,11 @@
 		2964B70647FD555C87358945 /* Pods_TestwarezAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2b04a403a26b142c841f14ab /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
 		38f38ddf910f0cae03fcf13d /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399A1B94A90B000C5D1B /* Main.storyboard */; };
-		3fcdd579eca785e9057cb30d /* TestwarezAppAccessibilityMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */; settings = {ASSET_TAGS = (); }; };
 		433049CA1BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */; settings = {ASSET_TAGS = (); }; };
 		433049CB1BB491DC00166378 /* testExample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433049C91BB491DC00166378 /* testExample@2x.png */; settings = {ASSET_TAGS = (); }; };
 		433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 433049CC1BB4927C00166378 /* SnapshotTestHelper.m */; settings = {ASSET_TAGS = (); }; };
+		437BB4251BB68EA500230850 /* UIView+AccessibilityForDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */; settings = {ASSET_TAGS = (); }; };
+		437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; settings = {ASSET_TAGS = (); }; };
 		572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		8c8a49e404b80c2205ec6035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
@@ -29,7 +30,6 @@
 		9C89790F1B9E305B005E69F2 /* TestwarezAppMapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979111B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979131B9F4103005E69F2 /* TestwarezAppRegulationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */; settings = {ASSET_TAGS = (); }; };
-		9C90F60B1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */; settings = {ASSET_TAGS = (); }; };
 		9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9CC239931B94A90B000C5D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
@@ -72,6 +72,10 @@
 		433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithDefaltState@2x.png"; sourceTree = "<group>"; };
 		433049C91BB491DC00166378 /* testExample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testExample@2x.png"; sourceTree = "<group>"; };
 		433049CC1BB4927C00166378 /* SnapshotTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotTestHelper.m; sourceTree = "<group>"; };
+		437BB4231BB68EA500230850 /* UIView+AccessibilityForDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessibilityForDebug.h"; sourceTree = "<group>"; };
+		437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessibilityForDebug.m"; sourceTree = "<group>"; };
+		437BB4291BB699C100230850 /* AccessibilityConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibilityConstants.h; sourceTree = "<group>"; };
+		437BB42A1BB699C100230850 /* AccessibilityConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessibilityConstants.m; sourceTree = "<group>"; };
 		4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestwarezAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7b4e8ec7e48fc99dacf0a6f2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9C1AC94D1B94AFEB00710D04 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = "Pods/../build/Debug-iphoneos/KIF.framework"; sourceTree = "<group>"; };
@@ -91,7 +95,6 @@
 		9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMapViewTests.m; sourceTree = "<group>"; };
 		9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegistrationViewTests.m; sourceTree = "<group>"; };
 		9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegulationViewTests.m; sourceTree = "<group>"; };
-		9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppAccessibilityMacro.m; sourceTree = "<group>"; };
 		9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMainViewTests.m; sourceTree = "<group>"; };
 		9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppLoginViewTests.m; sourceTree = "<group>"; };
 		9CC2398D1B94A90B000C5D1B /* TestwarezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestwarezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -247,8 +250,11 @@
 				9CC2399A1B94A90B000C5D1B /* Main.storyboard */,
 				9CC2399D1B94A90B000C5D1B /* Images.xcassets */,
 				9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */,
+				437BB4231BB68EA500230850 /* UIView+AccessibilityForDebug.h */,
+				437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */,
+				437BB4291BB699C100230850 /* AccessibilityConstants.h */,
+				437BB42A1BB699C100230850 /* AccessibilityConstants.m */,
 				9CC239901B94A90B000C5D1B /* Supporting Files */,
-				9C90F60A1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m */,
 			);
 			path = TestwarezApp;
 			sourceTree = "<group>";
@@ -567,12 +573,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9CC239991B94A90B000C5D1B /* ViewController.m in Sources */,
+				437BB4251BB68EA500230850 /* UIView+AccessibilityForDebug.m in Sources */,
 				9C528A671B9C5AFD000CEC88 /* RegistrationViewController.m in Sources */,
 				9CC239961B94A90B000C5D1B /* AppDelegate.m in Sources */,
 				9C528A621B99EB85000CEC88 /* MapViewController.m in Sources */,
 				9C528A6A1B9C8D26000CEC88 /* RegistrationOnlineViewController.m in Sources */,
 				9C1AC9551B964A2500710D04 /* RegulationViewController.m in Sources */,
-				9C90F60B1BA091A700D2F5EA /* TestwarezAppAccessibilityMacro.m in Sources */,
+				437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */,
 				9CC239931B94A90B000C5D1B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,7 +604,6 @@
 				0c805d00d137005255be95de /* MapViewController.m in Sources */,
 				0220bb10bb5ba63eda47c1df /* RegistrationOnlineViewController.m in Sources */,
 				bfab38559b886e1fc1db851e /* RegulationViewController.m in Sources */,
-				3fcdd579eca785e9057cb30d /* TestwarezAppAccessibilityMacro.m in Sources */,
 				8c8a49e404b80c2205ec6035 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

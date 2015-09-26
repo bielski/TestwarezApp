@@ -3,6 +3,7 @@
 //  Copyright © 2015 codework. All rights reserved.
 //
 
+#import "AccessibilityConstants.h"
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
@@ -16,9 +17,9 @@
 - (void)beforeEach {
 
     [super beforeEach];
-    [tester waitForViewWithAccessibilityLabel:@"localization"];
-    [tester tapViewWithAccessibilityLabel:@"localization"];
-    [tester waitForViewWithAccessibilityLabel:@"mapView"];
+    [tester waitForViewWithAccessibilityLabel:AccessibilityConstants.localizationButton];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.localizationButton];
+    [tester waitForViewWithAccessibilityLabel:AccessibilityConstants.mapView];
 }
 
 - (void)afterEach {
@@ -35,10 +36,10 @@
 
 - (void)testMapViewShouldBeSwipeable {
     
-    [tester swipeViewWithAccessibilityLabel:@"mapView" inDirection:KIFSwipeDirectionDown];
-    [tester swipeViewWithAccessibilityLabel:@"mapView" inDirection:KIFSwipeDirectionUp];
-    [tester swipeViewWithAccessibilityLabel:@"mapView" inDirection:KIFSwipeDirectionLeft];
-    [tester swipeViewWithAccessibilityLabel:@"mapView" inDirection:KIFSwipeDirectionRight];
+    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionDown];
+    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionUp];
+    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionLeft];
+    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionRight];
 }
 
 @end

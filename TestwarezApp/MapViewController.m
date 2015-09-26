@@ -4,6 +4,8 @@
 //
 
 #import "MapViewController.h"
+#import "UIView+AccessibilityForDebug.h"
+#import "AccessibilityConstants.h"
 #import <MapKit/MapKit.h>
 
 @interface MapViewController ()
@@ -22,7 +24,7 @@
 }
 
 - (void)addAccessibilityLabels {
-    self.mapView.accessibilityLabel = @"mapView";
+    [self.mapView setAccessibilityLabelForDebug:AccessibilityConstants.mapView];
 }
 
 - (void)updateCoordinates {

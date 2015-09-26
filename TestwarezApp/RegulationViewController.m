@@ -4,6 +4,8 @@
 //
 
 #import "RegulationViewController.h"
+#import "UIView+AccessibilityForDebug.h"
+#import "AccessibilityConstants.h"
 
 @interface RegulationViewController ()
 
@@ -20,7 +22,7 @@
 }
 
 - (void)addAccessibilityLabels {
-    self.regulationWebView.accessibilityLabel = @"regulationWebView";
+    [self.regulationWebView setAccessibilityLabelForDebug:AccessibilityConstants.regulationWebView];
 }
 
 - (void)loadRequest {

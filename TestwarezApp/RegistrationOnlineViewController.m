@@ -4,6 +4,8 @@
 //
 
 #import "RegistrationOnlineViewController.h"
+#import "UIView+AccessibilityForDebug.h"
+#import "AccessibilityConstants.h"
 
 @interface RegistrationOnlineViewController ()
 
@@ -27,7 +29,7 @@
 }
 
 - (void)addAccessibilityLabels {
-    self.registrationOnlineWebView.accessibilityLabel = @"registrationOnlineWebView";
+    [self.registrationOnlineWebView setAccessibilityLabelForDebug:AccessibilityConstants.registrationOnlineWebView];
 }
 
 @end

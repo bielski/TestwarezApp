@@ -4,6 +4,8 @@
 //
 
 #import "RegistrationViewController.h"
+#import "UIView+AccessibilityForDebug.h"
+#import "AccessibilityConstants.h"
 
 @interface RegistrationViewController ()
 
@@ -24,10 +26,10 @@
 }
 
 - (void)addAccessibilityLabels {
-    self.loginTextField.accessibilityLabel = @"loginTextField";
-    self.passwordTextField.accessibilityLabel = @"passwordTextField";
-    self.loginButton.accessibilityLabel = @"loginButton";
-    self.registerButton.accessibilityLabel = @"registerButton";
+    [self.loginTextField setAccessibilityLabelForDebug:AccessibilityConstants.loginTextField];
+    [self.passwordTextField setAccessibilityLabelForDebug:AccessibilityConstants.passwordTextField];
+    [self.loginButton setAccessibilityLabelForDebug:AccessibilityConstants.loginButton];
+    [self.registerButton setAccessibilityLabelForDebug:AccessibilityConstants.registerButton];
 }
 
 - (void)setImageForLoginTextField {

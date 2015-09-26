@@ -7,6 +7,7 @@
 #import <XCTest/XCTest.h>
 #import <KIF/KIF.h>
 #import "UIAccessibilityElement-KIFAdditions.h"
+#import "AccessibilityConstants.h"
 
 @interface TestwarezAppRegulationViewTests : KIFTestCase
 
@@ -17,8 +18,8 @@
 - (void)beforeEach {
     
     [super beforeEach];
-    [tester waitForViewWithAccessibilityLabel:@"regulation"];
-    [tester tapViewWithAccessibilityLabel:@"regulation"];
+    [tester waitForViewWithAccessibilityLabel:AccessibilityConstants.regulationButton];
+    [tester tapViewWithAccessibilityLabel:AccessibilityConstants.regulationButton];
 }
 
 - (void)afterEach {
