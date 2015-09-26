@@ -18,6 +18,7 @@
 		437BB4251BB68EA500230850 /* UIView+AccessibilityForDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */; settings = {ASSET_TAGS = (); }; };
 		437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; settings = {ASSET_TAGS = (); }; };
 		437BB4331BB6AA9200230850 /* TestwarezAppKIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */; settings = {ASSET_TAGS = (); }; };
+		437BB43B1BB6B16E00230850 /* TestwarezAppXcodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB43A1BB6B16E00230850 /* TestwarezAppXcodeUITests.m */; };
 		572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
 		78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		8c8a49e404b80c2205ec6035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
@@ -49,6 +50,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		437BB43D1BB6B16E00230850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CC239851B94A90B000C5D1B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CC2398C1B94A90B000C5D1B;
+			remoteInfo = TestwarezApp;
+		};
 		9C3B1FD21B94AD0B00D79958 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9CC239851B94A90B000C5D1B /* Project object */;
@@ -79,6 +87,9 @@
 		437BB42A1BB699C100230850 /* AccessibilityConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccessibilityConstants.m; sourceTree = "<group>"; };
 		437BB4311BB6AA9200230850 /* TestwarezAppKIFTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestwarezAppKIFTestCase.h; sourceTree = "<group>"; };
 		437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppKIFTestCase.m; sourceTree = "<group>"; };
+		437BB4381BB6B16E00230850 /* TestwarezAppXcodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestwarezAppXcodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		437BB43A1BB6B16E00230850 /* TestwarezAppXcodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppXcodeUITests.m; sourceTree = "<group>"; };
+		437BB43C1BB6B16E00230850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestwarezAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7b4e8ec7e48fc99dacf0a6f2 /* CFNetwork.framework */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		9C1AC94D1B94AFEB00710D04 /* KIF.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KIF.framework; path = "Pods/../build/Debug-iphoneos/KIF.framework"; sourceTree = "<group>"; };
@@ -118,6 +129,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		437BB4351BB6B16E00230850 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C3B1FC91B94AD0B00D79958 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -204,6 +222,15 @@
 			name = TestHelpers;
 			sourceTree = "<group>";
 		};
+		437BB4391BB6B16E00230850 /* TestwarezAppXcodeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				437BB43A1BB6B16E00230850 /* TestwarezAppXcodeUITests.m */,
+				437BB43C1BB6B16E00230850 /* Info.plist */,
+			);
+			path = TestwarezAppXcodeUITests;
+			sourceTree = "<group>";
+		};
 		9C3B1FCD1B94AD0B00D79958 /* TestwarezAppUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +258,7 @@
 				9CC2398F1B94A90B000C5D1B /* TestwarezApp */,
 				9CC239A91B94A90B000C5D1B /* TestwarezAppTests */,
 				9C3B1FCD1B94AD0B00D79958 /* TestwarezAppUITests */,
+				437BB4391BB6B16E00230850 /* TestwarezAppXcodeUITests */,
 				9CC2398E1B94A90B000C5D1B /* Products */,
 				1427C400E7B0ECB768823071 /* Pods */,
 				B77D0CCF062F4EFA3AF05003 /* Frameworks */,
@@ -244,6 +272,7 @@
 				9CC239A61B94A90B000C5D1B /* TestwarezAppTests.xctest */,
 				9C3B1FCC1B94AD0B00D79958 /* TestwarezAppUITests.xctest */,
 				433047201BB4915800166378 /* TestwarezApp-cal.app */,
+				437BB4381BB6B16E00230850 /* TestwarezAppXcodeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,6 +348,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		437BB4371BB6B16E00230850 /* TestwarezAppXcodeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437BB43F1BB6B16E00230850 /* Build configuration list for PBXNativeTarget "TestwarezAppXcodeUITests" */;
+			buildPhases = (
+				437BB4341BB6B16E00230850 /* Sources */,
+				437BB4351BB6B16E00230850 /* Frameworks */,
+				437BB4361BB6B16E00230850 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				437BB43E1BB6B16E00230850 /* PBXTargetDependency */,
+			);
+			name = TestwarezAppXcodeUITests;
+			productName = TestwarezAppXcodeUITests;
+			productReference = 437BB4381BB6B16E00230850 /* TestwarezAppXcodeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9C3B1FCB1B94AD0B00D79958 /* TestwarezAppUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9C3B1FD61B94AD0B00D79958 /* Build configuration list for PBXNativeTarget "TestwarezAppUITests" */;
@@ -404,6 +451,10 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = codework;
 				TargetAttributes = {
+					437BB4371BB6B16E00230850 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 9CC2398C1B94A90B000C5D1B;
+					};
 					9C3B1FCB1B94AD0B00D79958 = {
 						CreatedOnToolsVersion = 6.4;
 						TestTargetID = 9CC2398C1B94A90B000C5D1B;
@@ -434,11 +485,19 @@
 				9CC239A51B94A90B000C5D1B /* TestwarezAppTests */,
 				9C3B1FCB1B94AD0B00D79958 /* TestwarezAppUITests */,
 				dea6aa68c86270867c701fa8 /* TestwarezApp-cal */,
+				437BB4371BB6B16E00230850 /* TestwarezAppXcodeUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		437BB4361BB6B16E00230850 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C3B1FCA1B94AD0B00D79958 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,6 +630,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		437BB4341BB6B16E00230850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437BB43B1BB6B16E00230850 /* TestwarezAppXcodeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9C3B1FC81B94AD0B00D79958 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -625,6 +692,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		437BB43E1BB6B16E00230850 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CC2398C1B94A90B000C5D1B /* TestwarezApp */;
+			targetProxy = 437BB43D1BB6B16E00230850 /* PBXContainerItemProxy */;
+		};
 		9C3B1FD31B94AD0B00D79958 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9CC2398C1B94A90B000C5D1B /* TestwarezApp */;
@@ -674,6 +746,34 @@
 					"-lstdc++",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		437BB4401BB6B16E00230850 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TestwarezAppXcodeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allegro.TestwarezAppXcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestwarezApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		437BB4411BB6B16E00230850 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TestwarezAppXcodeUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.allegro.TestwarezAppXcodeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TestwarezApp;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -874,6 +974,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		437BB43F1BB6B16E00230850 /* Build configuration list for PBXNativeTarget "TestwarezAppXcodeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437BB4401BB6B16E00230850 /* Debug */,
+				437BB4411BB6B16E00230850 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		9C3B1FD61B94AD0B00D79958 /* Build configuration list for PBXNativeTarget "TestwarezAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
