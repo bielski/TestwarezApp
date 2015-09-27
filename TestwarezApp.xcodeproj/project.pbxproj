@@ -16,9 +16,6 @@
 		434507841BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 434507831BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m */; settings = {ASSET_TAGS = (); }; };
 		434507861BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434507851BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework */; };
 		434507901BB858BD00EF5AA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4345078F1BB858BD00EF5AA6 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
-		434507961BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434507931BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png */; settings = {ASSET_TAGS = (); }; };
-		434507971BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434507941BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png */; settings = {ASSET_TAGS = (); }; };
-		434507981BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434507951BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png */; settings = {ASSET_TAGS = (); }; };
 		437BB4251BB68EA500230850 /* UIView+AccessibilityForDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */; settings = {ASSET_TAGS = (); }; };
 		437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; settings = {ASSET_TAGS = (); }; };
 		437BB4331BB6AA9200230850 /* TestwarezAppKIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */; settings = {ASSET_TAGS = (); }; };
@@ -83,9 +80,6 @@
 		434507831BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMainViewSnapshotTests.m; sourceTree = "<group>"; };
 		434507851BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = "Pods/../build/Debug-iphoneos/FBSnapshotTestCase.framework"; sourceTree = "<group>"; };
 		4345078F1BB858BD00EF5AA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		434507931BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerUsingCustomMacro_iPad@2x.png"; sourceTree = "<group>"; };
-		434507941BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerUsingCustomMacro_iPhone6@2x.png"; sourceTree = "<group>"; };
-		434507951BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerUsingDefaultMacro@2x.png"; sourceTree = "<group>"; };
 		437BB4231BB68EA500230850 /* UIView+AccessibilityForDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessibilityForDebug.h"; sourceTree = "<group>"; };
 		437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessibilityForDebug.m"; sourceTree = "<group>"; };
 		437BB4291BB699C100230850 /* AccessibilityConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibilityConstants.h; sourceTree = "<group>"; };
@@ -201,9 +195,6 @@
 		434507921BB85A1700EF5AA6 /* TestwarezAppMainViewSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
-				434507931BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png */,
-				434507941BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png */,
-				434507951BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png */,
 			);
 			path = TestwarezAppMainViewSnapshotTests;
 			sourceTree = "<group>";
@@ -517,9 +508,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				434507981BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png in Resources */,
-				434507961BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png in Resources */,
-				434507971BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
