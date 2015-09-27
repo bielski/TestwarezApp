@@ -12,16 +12,19 @@
 		2964B70647FD555C87358945 /* Pods_TestwarezAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A791DDABF00CC0F35A65ADB /* Pods_TestwarezAppTests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		2b04a403a26b142c841f14ab /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
 		38f38ddf910f0cae03fcf13d /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399A1B94A90B000C5D1B /* Main.storyboard */; };
-		433049CA1BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */; settings = {ASSET_TAGS = (); }; };
-		433049CB1BB491DC00166378 /* testExample@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 433049C91BB491DC00166378 /* testExample@2x.png */; settings = {ASSET_TAGS = (); }; };
 		433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 433049CC1BB4927C00166378 /* SnapshotTestHelper.m */; settings = {ASSET_TAGS = (); }; };
+		434507841BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 434507831BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m */; settings = {ASSET_TAGS = (); }; };
+		434507861BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434507851BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework */; };
+		434507901BB858BD00EF5AA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4345078F1BB858BD00EF5AA6 /* Images.xcassets */; settings = {ASSET_TAGS = (); }; };
+		434507961BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434507931BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png */; settings = {ASSET_TAGS = (); }; };
+		434507971BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434507941BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png */; settings = {ASSET_TAGS = (); }; };
+		434507981BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 434507951BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png */; settings = {ASSET_TAGS = (); }; };
 		437BB4251BB68EA500230850 /* UIView+AccessibilityForDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */; settings = {ASSET_TAGS = (); }; };
 		437BB42B1BB699C100230850 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; settings = {ASSET_TAGS = (); }; };
 		437BB4331BB6AA9200230850 /* TestwarezAppKIFTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4321BB6AA9200230850 /* TestwarezAppKIFTestCase.m */; settings = {ASSET_TAGS = (); }; };
 		437BB43B1BB6B16E00230850 /* TestwarezAppXcodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB43A1BB6B16E00230850 /* TestwarezAppXcodeUITests.m */; };
 		437BB4431BB6BACB00230850 /* SnapshotConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4421BB6BACB00230850 /* SnapshotConstants.m */; settings = {ASSET_TAGS = (); }; };
 		572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C528A661B9C5AFD000CEC88 /* RegistrationViewController.m */; settings = {ASSET_TAGS = (); }; };
-		78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		8c8a49e404b80c2205ec6035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
 		9C1AC9501B94AFFD00710D04 /* Pods_TestwarezAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1AC94F1B94AFFD00710D04 /* Pods_TestwarezAppTests.framework */; };
 		9C1AC9521B94B13900710D04 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1AC9511B94B13900710D04 /* FBSnapshotTestCase.framework */; };
@@ -33,13 +36,10 @@
 		9C89790F1B9E305B005E69F2 /* TestwarezAppMapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979111B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9C8979131B9F4103005E69F2 /* TestwarezAppRegulationViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */; settings = {ASSET_TAGS = (); }; };
-		9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */; settings = {ASSET_TAGS = (); }; };
-		9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */; settings = {ASSET_TAGS = (); }; };
 		9CC239931B94A90B000C5D1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239921B94A90B000C5D1B /* main.m */; };
 		9CC239961B94A90B000C5D1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239951B94A90B000C5D1B /* AppDelegate.m */; };
 		9CC239991B94A90B000C5D1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
 		9CC2399C1B94A90B000C5D1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399A1B94A90B000C5D1B /* Main.storyboard */; };
-		9CC2399E1B94A90B000C5D1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399D1B94A90B000C5D1B /* Images.xcassets */; };
 		9CC239A11B94A90B000C5D1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */; };
 		B4347B51C477724D34D1EA30 /* Pods_TestwarezAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21C524502B57FF95EE90E325 /* Pods_TestwarezAppUITests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		a6d59387af037736f30fe41b /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7b4e8ec7e48fc99dacf0a6f2 /* CFNetwork.framework */; };
@@ -79,9 +79,13 @@
 		15546EDAE022826DAF0BF2B7 /* Pods-TestwarezAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestwarezAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestwarezAppUITests/Pods-TestwarezAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		21C524502B57FF95EE90E325 /* Pods_TestwarezAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestwarezAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		433047201BB4915800166378 /* TestwarezApp-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TestwarezApp-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerWithDefaltState@2x.png"; sourceTree = "<group>"; };
-		433049C91BB491DC00166378 /* testExample@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testExample@2x.png"; sourceTree = "<group>"; };
 		433049CC1BB4927C00166378 /* SnapshotTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapshotTestHelper.m; sourceTree = "<group>"; };
+		434507831BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMainViewSnapshotTests.m; sourceTree = "<group>"; };
+		434507851BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = "Pods/../build/Debug-iphoneos/FBSnapshotTestCase.framework"; sourceTree = "<group>"; };
+		4345078F1BB858BD00EF5AA6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		434507931BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerUsingCustomMacro_iPad@2x.png"; sourceTree = "<group>"; };
+		434507941BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerUsingCustomMacro_iPhone6@2x.png"; sourceTree = "<group>"; };
+		434507951BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "testMainViewControllerUsingDefaultMacro@2x.png"; sourceTree = "<group>"; };
 		437BB4231BB68EA500230850 /* UIView+AccessibilityForDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessibilityForDebug.h"; sourceTree = "<group>"; };
 		437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessibilityForDebug.m"; sourceTree = "<group>"; };
 		437BB4291BB699C100230850 /* AccessibilityConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessibilityConstants.h; sourceTree = "<group>"; };
@@ -111,8 +115,6 @@
 		9C89790E1B9E305B005E69F2 /* TestwarezAppMapViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMapViewTests.m; sourceTree = "<group>"; };
 		9C8979101B9F345A005E69F2 /* TestwarezAppRegistrationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegistrationViewTests.m; sourceTree = "<group>"; };
 		9C8979121B9F4102005E69F2 /* TestwarezAppRegulationViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppRegulationViewTests.m; sourceTree = "<group>"; };
-		9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppMainViewTests.m; sourceTree = "<group>"; };
-		9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestwarezAppLoginViewTests.m; sourceTree = "<group>"; };
 		9CC2398D1B94A90B000C5D1B /* TestwarezApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestwarezApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC239911B94A90B000C5D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CC239921B94A90B000C5D1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,7 +123,6 @@
 		9CC239971B94A90B000C5D1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9CC239981B94A90B000C5D1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9CC2399B1B94A90B000C5D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9CC2399D1B94A90B000C5D1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9CC239A01B94A90B000C5D1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9CC239A61B94A90B000C5D1B /* TestwarezAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestwarezAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CC239AB1B94A90B000C5D1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -160,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434507861BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework in Frameworks */,
 				2964B70647FD555C87358945 /* Pods_TestwarezAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,29 +190,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		433049C51BB491DC00166378 /* ReferenceImages_64 */ = {
+		434507911BB85A1700EF5AA6 /* ReferenceImages_64 */ = {
 			isa = PBXGroup;
 			children = (
-				433049C61BB491DC00166378 /* TestwarezAppMainViewTests */,
-				433049C81BB491DC00166378 /* TestwarezAppTests */,
+				434507921BB85A1700EF5AA6 /* TestwarezAppMainViewSnapshotTests */,
 			);
 			path = ReferenceImages_64;
 			sourceTree = "<group>";
 		};
-		433049C61BB491DC00166378 /* TestwarezAppMainViewTests */ = {
+		434507921BB85A1700EF5AA6 /* TestwarezAppMainViewSnapshotTests */ = {
 			isa = PBXGroup;
 			children = (
-				433049C71BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png */,
+				434507931BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png */,
+				434507941BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png */,
+				434507951BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png */,
 			);
-			path = TestwarezAppMainViewTests;
-			sourceTree = "<group>";
-		};
-		433049C81BB491DC00166378 /* TestwarezAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				433049C91BB491DC00166378 /* testExample@2x.png */,
-			);
-			path = TestwarezAppTests;
+			path = TestwarezAppMainViewSnapshotTests;
 			sourceTree = "<group>";
 		};
 		437BB42C1BB6A43700230850 /* TestHelpers */ = {
@@ -295,7 +290,7 @@
 				9C528A681B9C8D26000CEC88 /* RegistrationOnlineViewController.h */,
 				9C528A691B9C8D26000CEC88 /* RegistrationOnlineViewController.m */,
 				9CC2399A1B94A90B000C5D1B /* Main.storyboard */,
-				9CC2399D1B94A90B000C5D1B /* Images.xcassets */,
+				4345078F1BB858BD00EF5AA6 /* Images.xcassets */,
 				9CC2399F1B94A90B000C5D1B /* LaunchScreen.xib */,
 				437BB42C1BB6A43700230850 /* TestHelpers */,
 				9CC239901B94A90B000C5D1B /* Supporting Files */,
@@ -315,9 +310,8 @@
 		9CC239A91B94A90B000C5D1B /* TestwarezAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				433049C51BB491DC00166378 /* ReferenceImages_64 */,
-				9C90F60C1BA2149200D2F5EA /* TestwarezAppMainViewTests.m */,
-				9C90F60E1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m */,
+				434507911BB85A1700EF5AA6 /* ReferenceImages_64 */,
+				434507831BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m */,
 				433049CC1BB4927C00166378 /* SnapshotTestHelper.m */,
 				437BB4421BB6BACB00230850 /* SnapshotConstants.m */,
 				9CC239AA1B94A90B000C5D1B /* Supporting Files */,
@@ -336,6 +330,7 @@
 		B77D0CCF062F4EFA3AF05003 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				434507851BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework */,
 				9C528A631B99F1EB000CEC88 /* MapKit.framework */,
 				9C1AC9511B94B13900710D04 /* FBSnapshotTestCase.framework */,
 				9C1AC94F1B94AFFD00710D04 /* Pods_TestwarezAppTests.framework */,
@@ -512,9 +507,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434507901BB858BD00EF5AA6 /* Images.xcassets in Resources */,
 				9CC2399C1B94A90B000C5D1B /* Main.storyboard in Resources */,
 				9CC239A11B94A90B000C5D1B /* LaunchScreen.xib in Resources */,
-				9CC2399E1B94A90B000C5D1B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,8 +517,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433049CA1BB491DC00166378 /* testMainViewControllerWithDefaltState@2x.png in Resources */,
-				433049CB1BB491DC00166378 /* testExample@2x.png in Resources */,
+				434507981BB85A1700EF5AA6 /* testMainViewControllerUsingDefaultMacro@2x.png in Resources */,
+				434507961BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPad@2x.png in Resources */,
+				434507971BB85A1700EF5AA6 /* testMainViewControllerUsingCustomMacro_iPhone6@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +529,6 @@
 			files = (
 				38f38ddf910f0cae03fcf13d /* Main.storyboard in Resources */,
 				c7eb53b4e2e58daa95f3d23d /* LaunchScreen.xib in Resources */,
-				78f8bf14fa3df0eff92962ce /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,10 +667,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C90F60F1BA215C100D2F5EA /* TestwarezAppLoginViewTests.m in Sources */,
 				433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */,
-				9C90F60D1BA2149200D2F5EA /* TestwarezAppMainViewTests.m in Sources */,
 				437BB4431BB6BACB00230850 /* SnapshotConstants.m in Sources */,
+				434507841BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -947,6 +941,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -967,6 +962,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = TestwarezAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -985,6 +981,7 @@
 				437BB4411BB6B16E00230850 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C3B1FD61B94AD0B00D79958 /* Build configuration list for PBXNativeTarget "TestwarezAppUITests" */ = {
 			isa = XCConfigurationList;

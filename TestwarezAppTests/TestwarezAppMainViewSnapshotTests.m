@@ -9,22 +9,23 @@
 #import <XCTest/XCTest.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
 
-static CGFloat const kViewHeight = 300.0f;
+static CGFloat const kViewHeight = 500.0f;
 
-@interface TestwarezAppMainViewTests : FBSnapshotTestCase
+@interface TestwarezAppMainViewSnapshotTests : FBSnapshotTestCase
 
 @property (strong, nonatomic) UIViewController *mainViewController;
 
 @end
 
-@implementation TestwarezAppMainViewTests
+@implementation TestwarezAppMainViewSnapshotTests
 
 - (void)setUp {
-    
+
     [super setUp];
-    
+
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.mainViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"mainViewController"];
+    
     self.recordMode = NO;
 }
 
@@ -32,10 +33,10 @@ static CGFloat const kViewHeight = 300.0f;
     FBSnapshotVerifyView(self.mainViewController.view, nil);
 }
 
-TestViewOnTwoPlatformsWithAccessibility(testMainViewControllerUsingCustomMacro,
-                                        self.mainViewController.view,
-                                        CGSizeMake(AGODiPhone4Width, kViewHeight),
-                                        CGSizeMake(AGODiPhone4Width, kViewHeight));
+TestViewOnTwoPlatforms(testMainViewControllerUsingCustomMacro,
+                       self.mainViewController.view,
+                       CGSizeMake(iPhone4Width, iPhone4Height),
+                       CGSizeMake(iPhone6PlusWidth, iPhone6PlusHeight));
 
 @end
 
