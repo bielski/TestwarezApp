@@ -1,5 +1,5 @@
 //
-//  Created by ewa on 10.09.2015.
+//  Created by Ewa Bielska on 10.09.2015.
 //  Copyright © 2015 codework. All rights reserved.
 //
 
@@ -8,8 +8,6 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
-
-static CGFloat const kViewHeight = 500.0f;
 
 @interface TestwarezAppMainViewSnapshotTests : FBSnapshotTestCase
 

@@ -1,5 +1,5 @@
 //
-//  Created by ewa on 06.09.2015.
+//  Created by Ewa Bielska on 06.09.2015.
 //  Copyright © 2015 codework. All rights reserved.
 //
 
@@ -12,7 +12,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *loginTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *confirmLoginButton;
-
 @property (strong, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
@@ -21,12 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self addAccessibilityLabels];
+    [self setAccessibilityLabels];
     [self setImageForLoginTextField];
     [self setImageForPasswordTextField];
 }
 
-- (void)addAccessibilityLabels {
+- (void)setAccessibilityLabels {
     [self.loginTextField setAccessibilityLabelForDebug:AccessibilityConstants.loginTextField];
     [self.passwordTextField setAccessibilityLabelForDebug:AccessibilityConstants.passwordTextField];
     [self.confirmLoginButton setAccessibilityLabelForDebug:AccessibilityConstants.confirmLoginButton];
@@ -58,6 +57,5 @@
     
     [alert show];
 }
-
 
 @end

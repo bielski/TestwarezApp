@@ -1,5 +1,5 @@
 //
-//  Created by ewa on 01.09.2015.
+//  Created by Ewa Bielska on 01.09.2015.
 //  Copyright (c) 2015 codework. All rights reserved.
 //
 
@@ -18,10 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self loadRequest];
-    [self addAccessibilityLabels];
+    [self setAccessibilityLabels];
 }
 
-- (void)addAccessibilityLabels {
+- (void)setAccessibilityLabels {
     [self.regulationWebView setAccessibilityLabelForDebug:AccessibilityConstants.regulationWebView];
 }
 
