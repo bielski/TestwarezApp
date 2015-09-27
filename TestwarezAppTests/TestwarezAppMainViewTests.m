@@ -14,7 +14,6 @@ static CGFloat const kViewHeight = 300.0f;
 @interface TestwarezAppMainViewTests : FBSnapshotTestCase
 
 @property (strong, nonatomic) UIViewController *mainViewController;
-@property (strong, nonatomic) UIView *view;
 
 @end
 
@@ -26,7 +25,6 @@ static CGFloat const kViewHeight = 300.0f;
     
     UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.mainViewController = [mainStoryboard instantiateViewControllerWithIdentifier:@"mainViewController"];
-    self.view = self.mainViewController.view;
     self.recordMode = NO;
 }
 
