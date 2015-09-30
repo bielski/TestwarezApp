@@ -18,9 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self updateCoordinates];
-    [self makePointAnnotation];
+
     [self setAccessibilityLabels];
+
+    [self makePointAnnotation];
+    [self updateCoordinates];
 }
 
 - (void)setAccessibilityLabels {
@@ -28,7 +30,7 @@
 }
 
 - (void)updateCoordinates {
-    MKCoordinateSpan span = MKCoordinateSpanMake(0.20f, 0.20f);
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.2, 0.2);
     CLLocationCoordinate2D coordinates = {52.485824, 20.967262};
     MKCoordinateRegion region = {coordinates, span};
     

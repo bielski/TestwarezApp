@@ -26,7 +26,7 @@
 
 - (void)testExample {
     
-    //Record your test
+    //Delete?
     
 }
 

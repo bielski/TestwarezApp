@@ -11,7 +11,7 @@
 
 @property (strong, nonatomic) IBOutlet UITextField *loginTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
-@property (weak, nonatomic) IBOutlet UIButton *confirmLoginButton;
+@property (strong, nonatomic) IBOutlet UIButton *confirmLoginButton;
 @property (strong, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
@@ -21,8 +21,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setAccessibilityLabels];
-    [self setImageForLoginTextField];
-    [self setImageForPasswordTextField];
+    [self setUpImageForLoginTextField];
+    [self setUpImageForPasswordTextField];
 }
 
 - (void)setAccessibilityLabels {
@@ -32,14 +32,14 @@
     [self.registerButton setAccessibilityLabelForDebug:AccessibilityConstants.registerButton];
 }
 
-- (void)setImageForLoginTextField {
+- (void)setUpImageForLoginTextField {
     self.loginTextField.leftViewMode = UITextFieldViewModeAlways;
     UIImageView *loginImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"contact2.png"]];
     loginImageView.alpha = 0.5f;
     self.loginTextField.leftView = loginImageView;
 }
 
-- (void)setImageForPasswordTextField {
+- (void)setUpImageForPasswordTextField {
     self.passwordTextField.leftViewMode = UITextFieldViewModeAlways;
     UIImageView *passwordImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"password2.png"]];
     passwordImageView.alpha = 0.5f;
@@ -47,15 +47,15 @@
 }
 
 - (IBAction)loginButtonTapped:(id)sender {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Info" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    
+
+    NSString *message;
     if ([self.loginTextField.text isEqualToString:@""] || [self.passwordTextField.text isEqualToString:@""]) {
-        alert.message = @"Proszę wprowadź dane do logowania";
+        message = @"Proszę wprowadź dane do logowania";
     } else {
-        alert.message = @"Gratulacje, zalogowałeś się \ue415";
+        message = @"Gratulacje, zalogowałeś się \ue415";
     }
-    
-    [alert show];
+
+    [[[UIAlertView alloc] initWithTitle:@"Info" message:message delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
 }
 
 @end
