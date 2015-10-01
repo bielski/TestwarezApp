@@ -1,28 +1,18 @@
 PODS:
   - FBSnapshotTestCase/Core (2.0.4)
-  - KIF (3.2.3):
-    - KIF/XCTest (= 3.2.3)
-  - KIF/XCTest (3.2.3)
+  - KIF (3.3.0):
+    - KIF/Core (= 3.3.0)
+  - KIF/Core (3.3.0)
   - OCMock (3.1.5)
 
 DEPENDENCIES:
   - FBSnapshotTestCase/Core (~> 2.0)
-  - KIF (from `https://github.com/kif-framework/KIF`, commit `d2567a9`)
+  - KIF (~> 3.3)
   - OCMock (~> 3.1)
-
-EXTERNAL SOURCES:
-  KIF:
-    :commit: d2567a9
-    :git: https://github.com/kif-framework/KIF
-
-CHECKOUT OPTIONS:
-  KIF:
-    :commit: d2567a9
-    :git: https://github.com/kif-framework/KIF
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: d94cf34841c9e77390e29009e8e2713479d48753
-  KIF: a94bffe9c97e449e44f8fa481c53243d21309e1e
+  KIF: 0a82046d06f3648799cac522d2d0f7934214caac
   OCMock: 4c2925291f80407c3738dd1db14d21d0cc278864
 
 COCOAPODS: 0.38.2

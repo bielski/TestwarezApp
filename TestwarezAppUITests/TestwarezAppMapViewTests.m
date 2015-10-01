@@ -27,18 +27,15 @@ static NSString *const kHotelNameAndAddress = @"Hotel Windsor, Jachranka 75";
     [tester tapViewWithAccessibilityLabel:AccessibilityConstants.backButton];
 }
 
+- (void)testMapViewShouldBeSwipeable {
+    
+    // Swipe map view
+}
+
 - (void)testMapViewShouldContainAnnotation {
     
     [tester waitForViewWithAccessibilityLabel:kHotelNameAndAddress];
     [tester tapViewWithAccessibilityLabel:kHotelNameAndAddress];
-}
-
-- (void)testMapViewShouldBeSwipeable {
-    
-    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionDown];
-    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionUp];
-    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionLeft];
-    [tester swipeViewWithAccessibilityLabel:AccessibilityConstants.mapView inDirection:KIFSwipeDirectionRight];
 }
 
 @end

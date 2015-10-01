@@ -7,8 +7,6 @@
 #import <FBSnapshotTestCase/FBSnapshotTestCase.h>
 #import <OCMock/OCMock.h>
 
-
-// sdfsdfs
 #define TestViewWithAccessibility(name, view) \
 \
 - (void)name##_CategoryExtraSmall { \
@@ -19,7 +17,6 @@
   SnapshotTestWithAccessibility(view, view.frame.size, UIContentSizeCategoryExtraExtraExtraLarge) \
 }
 
-// sdfsdfs
 #define TestViewOnTwoPlatforms(name, view, iPhone6Size, iPadSize) \
 \
 - (void)name##_iPhone6 { \
@@ -30,7 +27,6 @@
   SnapshotTest(view, iPadSize) \
 }
 
-// sfdsdfsd ;(
 #define TestViewOnTwoPlatformsWithAccessibility(name, view, iPhone6Size, iPadSize) \
 \
 - (void)name##_iPhone6_CategoryExtraSmall { \

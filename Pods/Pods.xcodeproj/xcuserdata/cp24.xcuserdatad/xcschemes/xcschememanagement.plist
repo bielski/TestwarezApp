@@ -8,49 +8,31 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>KIF.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>OCMock.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-TestwarezAppTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Pods-TestwarezAppUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>07D87856F4D63010A23F423441341967</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>273D7E91F3E73E3628345BC2105663ED</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>422FD3261C76902EF651712B7B3B1195</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -60,22 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>743C79840D1233E237DFBC9723606E35</key>
+		<key>52408C2D6C130A895F398B214AAA4DCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>7E9CCD8E168BE315B76BDF050ACAD40D</key>
+		<key>9EF9287D8CBACBF6E2D0D2ABB4F65D71</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C976891F593E34B3C8ACBDD93CA13B2B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D6A4EA710CD0E064D54134AD1BA55C6F</key>
+		<key>A3740C65E0703E72AC5252CA5F86EBE4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

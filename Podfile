@@ -12,6 +12,6 @@ target 'TestwarezAppTests' do
 end
 
 target 'TestwarezAppUITests' do
-    pod 'KIF', :git => 'https://github.com/kif-framework/KIF', :commit => 'd2567a9'
+    pod 'KIF', '~> 3.3'
 end
 
