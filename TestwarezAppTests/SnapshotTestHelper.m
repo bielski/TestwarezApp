@@ -1,6 +1,6 @@
 //
-//  Created by Michal Banasiak on 24.03.2015.
-//  Copyright (c) 2015 Allegro. All rights reserved.
+//  Created by Ewa Bielska on 10.09.2015.
+//  Copyright © 2015 codework. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -30,7 +30,7 @@
   SnapshotTest(view, iPadSize) \
 }
 
-// sfdsdfsd
+// sfdsdfsd ;(
 #define TestViewOnTwoPlatformsWithAccessibility(name, view, iPhone6Size, iPadSize) \
 \
 - (void)name##_iPhone6_CategoryExtraSmall { \

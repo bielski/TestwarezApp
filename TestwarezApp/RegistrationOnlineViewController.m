@@ -17,8 +17,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadRequest];
+
     [self setAccessibilityLabels];
+    [self loadRequest];
 }
 
 - (void)loadRequest {
