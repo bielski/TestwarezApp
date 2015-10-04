@@ -10,6 +10,7 @@
 @interface RegulationViewController ()
 
 @property (strong, nonatomic) IBOutlet UIWebView *regulationWebView;
+@property (strong, nonatomic) UIActivityIndicatorView *activityView;
 
 @end
 
@@ -17,8 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.regulationWebView.delegate = self;
 
     [self setAccessibilityLabels];
+    [self addActivityIndicator];
+    
     [self loadRequest];
 }
 
@@ -31,6 +35,20 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:urlAddress];
     
     [self.regulationWebView loadRequest:request];
+}
+
+- (void)addActivityIndicator {
+    self.activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    self.activityView.center = self.view.center;
+    [self.activityView startAnimating];
+    self.activityView.tag = 100;
+    [self.view addSubview:self.activityView];
+}
+
+#pragma mark - MapViewController delegate methods
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+    [self.activityView setHidden:YES];
 }
 
 @end

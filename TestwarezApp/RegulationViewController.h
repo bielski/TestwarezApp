@@ -5,6 +5,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegulationViewController : UIViewController
+@interface RegulationViewController : UIViewController<UIWebViewDelegate>
 
 @end

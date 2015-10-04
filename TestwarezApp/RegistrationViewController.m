@@ -20,9 +20,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setAccessibilityLabels];
-    [self setUpImageForLoginTextField];
-    [self setUpImageForPasswordTextField];
+    [self setImageForLoginTextField];
+    [self setImageForPasswordTextField];
 }
 
 - (void)setAccessibilityLabels {
@@ -32,14 +33,14 @@
     [self.registerButton setAccessibilityLabelForDebug:AccessibilityConstants.registerButton];
 }
 
-- (void)setUpImageForLoginTextField {
+- (void)setImageForLoginTextField {
     self.loginTextField.leftViewMode = UITextFieldViewModeAlways;
     UIImageView *loginImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"contact2.png"]];
     loginImageView.alpha = 0.5f;
     self.loginTextField.leftView = loginImageView;
 }
 
-- (void)setUpImageForPasswordTextField {
+- (void)setImageForPasswordTextField {
     self.passwordTextField.leftViewMode = UITextFieldViewModeAlways;
     UIImageView *passwordImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"password2.png"]];
     passwordImageView.alpha = 0.5f;
