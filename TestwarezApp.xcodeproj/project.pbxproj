@@ -13,6 +13,9 @@
 		2b04a403a26b142c841f14ab /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CC239981B94A90B000C5D1B /* ViewController.m */; };
 		38f38ddf910f0cae03fcf13d /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC2399A1B94A90B000C5D1B /* Main.storyboard */; };
 		433049CD1BB4927C00166378 /* SnapshotTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 433049CC1BB4927C00166378 /* SnapshotTestHelper.m */; };
+		4330EAB81BC594B400196D72 /* UIView+AccessibilityForDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB4241BB68EA500230850 /* UIView+AccessibilityForDebug.m */; };
+		4330EAB91BC594B400196D72 /* AccessibilityConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 437BB42A1BB699C100230850 /* AccessibilityConstants.m */; };
+		4330EABA1BC5955A00196D72 /* Images.xcassets in Sources */ = {isa = PBXBuildFile; fileRef = 4345078F1BB858BD00EF5AA6 /* Images.xcassets */; };
 		434507841BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 434507831BB8369100EF5AA6 /* TestwarezAppMainViewSnapshotTests.m */; };
 		434507861BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434507851BB83A9C00EF5AA6 /* FBSnapshotTestCase.framework */; };
 		434507901BB858BD00EF5AA6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4345078F1BB858BD00EF5AA6 /* Images.xcassets */; };
@@ -677,6 +680,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4330EABA1BC5955A00196D72 /* Images.xcassets in Sources */,
+				4330EAB81BC594B400196D72 /* UIView+AccessibilityForDebug.m in Sources */,
+				4330EAB91BC594B400196D72 /* AccessibilityConstants.m in Sources */,
 				2b04a403a26b142c841f14ab /* ViewController.m in Sources */,
 				572c618d4294ea7e6f0dba6a /* RegistrationViewController.m in Sources */,
 				f5572bb92863798c00588941 /* AppDelegate.m in Sources */,
